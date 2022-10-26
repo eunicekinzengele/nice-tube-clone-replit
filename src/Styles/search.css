@@ -1,0 +1,46 @@
+input{
+    width: 250px;
+    height: 35px;
+    margin-right: 9rem;
+    border: none;
+    margin-top: 10px;
+  }
+
+  .Place_filter{
+    color: white;
+    /* background-color: rosybrown; */
+    margin-left: 20rem;
+    position: absolute;
+    margin-top: 7rem;
+    height: 30rem;
+    width: 37.5rem;
+    
+}
+.videos__emplacement{
+  width:12rem;
+  height: 13rem;
+  background-color: #424242;
+  /* border: 2px solid white; */
+  display: block;
+  overflow-y: hidden;
+}
+
+.title__video {
+  color: white;
+  margin-right:30px;
+  /* margin-left:; */
+  font-size: 15px;
+  /* overflow:hidden; */
+  margin: auto;
+  padding-right:2rem;
+}
+.button_search {
+    background-color:white;
+    height: 37px;
+    width: 60px;
+   left: 24rem;
+    position: absolute;
+    border: none;
+    margin-top: 10px;
+
+}

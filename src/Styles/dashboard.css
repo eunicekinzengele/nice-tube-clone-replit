@@ -1,0 +1,52 @@
+.div__dashboard{
+    color: white;
+    width: 200px;
+    background-color: #282626;
+    height: 500px;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 150px;
+    position: fixed;
+    /* display: flex; */
+}
+.list__dashboard{
+    display: grid;
+}
+li a{
+    font-size: 18px;
+    width: 20px;
+    margin-left: -3rem;
+}
+
+.btn_logout{
+    height: 50px;
+    margin-top: -5rem;
+    position: absolute;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    width: 7rem;
+    margin-top: 3rem;
+    margin-left: -3rem;
+}
+.btn_logout:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+ul li a{
+    border: 1px solid white;
+    background-color: #282626;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .div__dashboard{
+      margin-left: 7%;
+    }
+      
+  }

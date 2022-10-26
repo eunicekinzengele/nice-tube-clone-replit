@@ -1,0 +1,88 @@
+import React, { useEffect } from "react";
+import '../Styles/connexion.css';
+import Image from '../Images/logo_NiceTube.png'; 
+import { FcGoogle } from "react-icons/fc";
+import { gapi, loadAuth2 } from 'gapi-script';
+import { useNavigate } from "react-router-dom";
+import Parents__container from './ParentsContainer'
+import {useContext  } from 'react'
+import {contexteUse} from './UseContexte'
+
+
+
+
+
+function Login(){
+  const navigate = useNavigate();
+  const {token , setToken}= useContext(contexteUse)
+    const clientId ="129788055226-glev0dl084clkeph94jhapm27uhc8tck.apps.googleusercontent.com"
+    //"202009839663-v5f9j4a2vjcttqrsabr11mjhljrn48a1.apps.googleusercontent.com";
+
+ 
+    
+    useEffect(() => {
+        const setAuth2 = async () => {
+          const auth2 = await loadAuth2(
+            gapi,
+            clientId,
+            "https://www.googleapis.com/auth/youtube"
+          );
+          if (auth2.isSignedIn.get()) {
+            //auth2.signOut();
+            updateUser(auth2.currentUser.get());
+          } else {
+            attachSignin(document.getElementById("started"), auth2);
+          }
+        };
+        setAuth2();
+    }, []);
+    const attachSignin = (element, auth2) => {
+      auth2.attachClickHandler(
+        element,
+        {},
+        (googleUser) => {
+          updateUser(googleUser);
+        },
+        (error) => {
+          console.log(JSON.stringify(error));
+        }
+      );
+    };
+    const updateUser = (user) => {
+        console.log(user.xc.access_token);
+        localStorage.setItem("token", user.xc.access_token);
+        setToken(user.xc.access_token)
+        navigate('/Parentscontainer')
+      };
+
+    //   routes ici
+
+    // const params = useParams()
+    // console.log(params);
+
+
+
+    return(
+
+        <div className="connexion_space">
+           {/* <div
+        id="started"
+        className="btn btn-danger d-block text-center"
+      >
+        Sign in with Google
+      </div> */}
+
+            <div className="general">
+                <img className="logo__connexion" src={Image}/>
+                <p>Sign in with</p>
+              
+                    <button  id="started" 
+                      className="button_login btn btn-danger d-block text-center"><FcGoogle/>         Google
+                      </button>
+                      </div>
+        </div>
+    )
+
+}
+
+export default Login;

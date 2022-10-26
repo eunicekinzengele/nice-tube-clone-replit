@@ -1,0 +1,16 @@
+.div__lecture{
+    color: white;
+    background-color: #0a0d0e;
+    /* border: solid 2px white; */
+    margin-left: 18.5rem;
+    position: absolute;
+    margin-top: 7rem;
+    height: 30rem;
+    width: 50%;
+}
+.watch{
+    width: 30rem;
+    height: 16rem;
+    /* border: solid 2px white; */
+
+}
