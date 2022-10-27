@@ -1,22 +1,22 @@
-.div__nav{
-    width: 1000px;
-    height: 80px;
-    background-color: #0a0d0e;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    margin-left: 150px;
-    display: flex;
-    border-bottom: 2px solid rgb(136, 136, 143);
-    position: fixed;
-    z-index: 1;
-  }
-  .img__logo{
-    width: 150px;
-    height:80px ;
-  }
-ul{
+.div__nav {
+  width: 1000px;
+  height: 80px;
+  background-color: #0a0d0e;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  margin-left: 150px;
+  display: flex;
+  border-bottom: 2px solid rgb(136, 136, 143);
+  position: fixed;
+  z-index: 1;
+}
+.img__logo {
+  width: 150px;
+  height: 80px;
+}
+ul {
   display: flex;
   list-style-type: none;
   margin: 10px;
@@ -31,22 +31,20 @@ ul li {
   color: white;
   margin-right: 20px;
 }
-ul li a{
+ul li a {
   text-decoration: none;
   margin-top: 20px;
   color: white;
-  /* background-color: red; */
-  /* border: 1px solid white; */
 }
-a :hover{
-  background-color: #E0E0E0;
+a :hover {
+  background-color: #e0e0e0;
   color: black;
 }
-a :active{
-  background-color: #E0E0E0;
+a :active {
+  background-color: #e0e0e0;
   color: black;
 }
-.liste_nav{
+.liste_nav {
   background-color: #424242;
   text-decoration: none;
   padding: 10px;
@@ -55,16 +53,7 @@ a :active{
 }
 
 @media screen and (max-width: 768px) {
-  .div__nav{
+  .div__nav {
     margin-left: 7%;
   }
-    
 }
-
-
-
-
-
-
-
-  

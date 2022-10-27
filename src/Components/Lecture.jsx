@@ -6,12 +6,9 @@ import { useState } from "react";
 export default function Lecture() {
   const { lecture } = useParams();
   const [video, setVideo] = useState([]);
-  
-
   return (
     <div className="div__lecture">
       <div className="watch">
-        
         <iframe
           width="760"
           height="500"
