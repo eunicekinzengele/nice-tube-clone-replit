@@ -3,7 +3,7 @@ import "../Styles/lecture.css";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 
-export default function Lecture() {
+export default function WatchVideo() {
   const { lecture } = useParams();
   const [video, setVideo] = useState([]);
   return (

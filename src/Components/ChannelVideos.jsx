@@ -4,7 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import { contexteUse } from "./UseContexte";
 import { useContext } from "react";
 
-export default function WatchSubscribe() {
+export default function ChannelVideos() {
   const [videos, setVideos] = useState([]);
   const { channelId } = useParams();
   const { token, setToken } = useContext(contexteUse);
@@ -26,7 +26,7 @@ export default function WatchSubscribe() {
 
           return (
             <div className="videos__emplacement">
-              <Link to={`/ParentsContainersLecture/${channelId}`}>
+              <Link to={`/ParentsCardWatchVideo/${channelId}`}>
                 <img src={item?.snippet?.thumbnails?.default?.url} alt="sub" />
               </Link>
               <p className="title">{item.snippet.title}</p>

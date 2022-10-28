@@ -3,9 +3,9 @@ import "../Styles/container.css";
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-function Container() {
-  const clientId = import.meta.env.REACT_APP_CLIENT_ID;
-  const key = /* import.meta.env.REACT_APP_API_KEY; */"AIzaSyB54oBHFCv-NoZwc6oAf8T56HXA2xNlIjo";
+function CardVideos() {
+  const clientId = import.meta.env.VITE_CLIENT_ID;
+  const key = /* import.meta.env.VITE_API_KEY;  */"AIzaSyB54oBHFCv-NoZwc6oAf8T56HXA2xNlIjo";
   const [video, setVideo] = useState([]);
   const params = useParams();
   const storage = localStorage.getItem("token");
@@ -23,7 +23,7 @@ function Container() {
           const lecture = item.id;
           return (
             <div className="videos__emplacement">
-              <Link to={`/ParentsContainersLecture/${lecture}`}>
+              <Link to={`/ParentsCardWatchVideo/${lecture}`}>
                 <img src={item.snippet.thumbnails.medium.url} />
                 <div className="div_title">
                   <p className="title__video">{item.snippet.title}</p>
@@ -36,4 +36,4 @@ function Container() {
     </div>
   );
 }
-export default Container;
+export default CardVideos;

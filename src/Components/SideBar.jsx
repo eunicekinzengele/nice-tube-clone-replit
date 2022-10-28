@@ -7,7 +7,7 @@ import { SiAudacity } from "react-icons/si";
 import { RiMovieLine } from "react-icons/ri";
 import Logout from "./Logout";
 
-function Dashboard() {
+function SideBar() {
   return (
     <div className="div__dashboard">
       <ul className="list__dashboard">
@@ -45,4 +45,4 @@ function Dashboard() {
     </div>
   );
 }
-export default Dashboard;
+export default SideBar;

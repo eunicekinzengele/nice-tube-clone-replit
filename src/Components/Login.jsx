@@ -44,7 +44,7 @@ function Login() {
     console.log(user.xc.access_token);
     localStorage.setItem("token", user.xc.access_token);
     setToken(user.xc.access_token);
-    navigate("/Parentscontainer");
+    navigate("/ParentsCardPopular");
   };
   return (
     <div className="connexion_space">

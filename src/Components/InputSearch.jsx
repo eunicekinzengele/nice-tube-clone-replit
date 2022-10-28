@@ -3,7 +3,7 @@ import "../Styles/search.css";
 import { Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
 
-export default function Search() {
+export default function InputSearch() {
   const [inputSearch, setInputSearch] = useState();
   const handleChange = (e) => {
     setInputSearch(e.target.value);
@@ -17,7 +17,7 @@ export default function Search() {
         onChange={handleChange}
         value={inputSearch}
       />
-      <Link className="" to={`/ParentsFilterSearch${inputSearch}`}>
+      <Link className="" to={`/ParentsCardSearchResult${inputSearch}`}>
         <button className="button_search" type="submit">
           <BsSearch />
         </button>

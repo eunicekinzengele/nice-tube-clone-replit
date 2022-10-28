@@ -2,13 +2,13 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { gapi, loadAuth2 } from "gapi-script";
 import Login from "./Components/Login";
-import ParentsContainer from "./Components/ParentsContainer";
-import ParentsContainersLecture from "./Components/ParentsContainersLecture";
-import ParentsContainerSubscribe from "./Components/ParentsContainerSubscribe";
+import ParentsCardPopular from "./Components/ParentsCardPopular";
+import ParentsCardChannel from "./Components/ParentsCardChannel"
+import ParentsCardChannelVideo from "./Components/ParentsCardChannelVideo"
+import ParentsCardSearchResult from "./Components/ParentsCardSearchResult"
+import ParentsCardWatchVideo from "./Components/ParentsCardWatchVideo"
 import { useEffect, useState } from "react";
 import { contexteUse } from "./Components/UseContexte";
-import ParentsWatchSubscribe from "./Components/ParentsWatchSubscribe";
-import ParentsFilterSearch from "./Components/ParentsFilterSearch";
 
 function App() {
   const [token, setToken] = useState("");
@@ -39,24 +39,24 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />}></Route>
           <Route
-            path="/ParentsContainer"
-            element={<ParentsContainer />}
+            path="/ParentsCardPopular"
+            element={<ParentsCardPopular />}
           ></Route>
           <Route
-            path="/ParentsContainersLecture/:lecture"
-            element={<ParentsContainersLecture />}
+            path="/ParentsCardWatchVideo/:lecture"
+            element={<ParentsCardWatchVideo />}
           />
           <Route
-            path="/ParentsContainerSubscribe"
-            element={<ParentsContainerSubscribe />}
+            path="/ParentsCardChannel"
+            element={<ParentsCardChannel />}
           ></Route>
           <Route
-            path="/ParentsWatchSubscribe/:channelId"
-            element={<ParentsWatchSubscribe />}
+            path="/ParentsCardChannelVideo/:channelId"
+            element={<ParentsCardChannelVideo />}
           ></Route>
           <Route
-            path="/ParentsFilterSearch:searchWord"
-            element={<ParentsFilterSearch />}
+            path="/ParentsCardSearchResult:searchWord"
+            element={<ParentsCardSearchResult />}
           ></Route>
         </Routes>
       </div>
