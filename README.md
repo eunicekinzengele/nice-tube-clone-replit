@@ -1,3 +1,16 @@
+- Voir le projet sur github sous le lien: "https://github.com/eunicekinzengele/nice-tube-clone-replit"
+- Cloner le projet 
+- Le lancer avec la commande "npm run dev"
+
+
+
+
+
+
+
+
+
+<!-- 
 ## Running React on Repl.it
 
 [React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.
@@ -14,4 +27,4 @@ By default, Replit runs the `dev` script, but you can configure it by changing t
 
 ### Typescript
 
-Just rename any file from `.jsx` to `.tsx`. You can also try our [TypeScript Template](https://replit.com/@replit/React-TypeScript)
+Just rename any file from `.jsx` to `.tsx`. You can also try our [TypeScript Template](https://replit.com/@replit/React-TypeScript) -->
