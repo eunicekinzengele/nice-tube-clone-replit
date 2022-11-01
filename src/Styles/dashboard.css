@@ -7,14 +7,34 @@
   margin-top: 130px;
   margin-left: 150px;
   position: fixed;
+  text-align: center;
 }
+
 .list__dashboard {
   display: grid;
+  row-gap: 15px;
+  text-align: center;
 }
-li a {
+li{
   font-size: 18px;
-  width: 20px;
-  margin-left: -3rem;
+  /* width: 20px; */
+  /* margin-left: -4rem; */
+  height: 20px;
+}
+.side_list{
+    background-color: #424242;
+    padding: 10px;
+    border-radius: 15px;
+    width: 30p
+  }
+.side_list:hover {
+    background-color: black;
+    color: white;
+  }
+.profil_img{
+  width: 70px;
+  height:70px;
+  ;
 }
 .btn_logout {
   height: 50px;
@@ -28,19 +48,20 @@ li a {
   border: none;
   width: 7rem;
   margin-top: 3rem;
-  margin-left: -3rem;
+  margin-left: -4.5rem;
 }
 .btn_logout:hover {
   background-color: white;
   color: black;
   border: 1px solid black;
 }
-ul li a {
-  border: 1px solid white;
-  background-color: #282626;
-  padding: 5px;
-  border-radius: 15px;
-}
+/* ul li a {
+  border: none;
+  background-color: #424242;
+ 
+} */
+
+
 
 @media screen and (max-width: 768px) {
   .div__dashboard {

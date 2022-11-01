@@ -1,42 +1,27 @@
 import React from "react";
 import "../Styles/dashboard.css";
-import { FaTable } from "react-icons/fa";
-import { BiMoviePlay } from "react-icons/bi";
-import { BiMovie } from "react-icons/bi";
-import { SiAudacity } from "react-icons/si";
-import { RiMovieLine } from "react-icons/ri";
 import Logout from "./Logout";
+import { Link } from "react-router-dom";
 
 function SideBar() {
   return (
     <div className="div__dashboard">
       <ul className="list__dashboard">
-        <li className="list_dashboard">
-          <a>
-            <FaTable /> Dashboard
-          </a>
+        <li>
+          <Link to={"/ParentsCardPopular"} className="side_list">
+            Tous
+          </Link>
         </li>
-        <li className="list_dashboard">
-          <a>
-            <BiMoviePlay /> Films
-          </a>
-        </li>
-        <li className="list_dashboard">
-          <a>
-            <BiMovie /> Séries
-          </a>
-        </li>
-        <li className="list_dashboard">
-          <a>
-            <SiAudacity /> Chansons
-          </a>
-        </li>
-        <li className="list_dashboard">
-          <a>
-            <RiMovieLine /> Dessin animé
-          </a>
+        
+        <li>
+          <Link to={"/ParentsCardChannel"} className="side_list">
+            Abonnements
+          </Link>
         </li>
         <li>
+          <li>
+            <img className="profil_img" src=""/>
+          </li>
           <button className="btn_logout">
             <Logout />
           </button>
