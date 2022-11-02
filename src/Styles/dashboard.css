@@ -8,6 +8,7 @@
   margin-left: 150px;
   position: fixed;
   text-align: center;
+  vertical-align: middle;
 }
 
 .list__dashboard {
@@ -15,17 +16,16 @@
   row-gap: 15px;
   text-align: center;
 }
-li{
-  font-size: 18px;
-  /* width: 20px; */
-  /* margin-left: -4rem; */
-  height: 20px;
+.container_list{
+  text-align: center;
+
 }
 .side_list{
-    background-color: #424242;
-    padding: 10px;
-    border-radius: 15px;
-    width: 30p
+  background-color: #424242;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 15px;
+  height: 30px;
   }
 .side_list:hover {
     background-color: black;
@@ -34,7 +34,7 @@ li{
 .profil_img{
   width: 70px;
   height:70px;
-  ;
+  border-radius: 50px;
 }
 .btn_logout {
   height: 50px;
@@ -48,7 +48,7 @@ li{
   border: none;
   width: 7rem;
   margin-top: 3rem;
-  margin-left: -4.5rem;
+  margin-left: -3.5rem;
 }
 .btn_logout:hover {
   background-color: white;

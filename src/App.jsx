@@ -9,7 +9,7 @@ import ParentsCardSearchResult from "./Components/ParentsCardSearchResult"
 import ParentsCardWatchVideo from "./Components/ParentsCardWatchVideo"
 import { useEffect, useState } from "react";
 import { contexteUse } from "./Components/UseContexte";
-import 'bootstrap/dist/css/bootstrap.min.css'
+// import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   const [token, setToken] = useState("");

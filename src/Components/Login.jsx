@@ -40,11 +40,30 @@ function Login() {
       }
     );
   };
+
+  
+
+//   const onSucces = (res) => {
+//     const profilePicture = res.profileObj['imageUrl']
+//     localStorage.setItem('item', profilePicture)
+//     const accessToken = res.accessToken
+//     localStorage.setItem('token', accessToken)
+//     navigate('/dashbord')
+//  }
+
+
   const updateUser = (user) => {
     console.log(user.xc.access_token);
     localStorage.setItem("token", user.xc.access_token);
     setToken(user.xc.access_token);
+    const profileImg = user.getBasicProfile().getImageUrl();
+    localStorage.setItem("profilUser", profileImg);
+    console.log("bonjour", profileImg);
     navigate("/ParentsCardPopular");
+
+
+
+    console.log(user);
   };
   return (
     <div className="connexion_space">
