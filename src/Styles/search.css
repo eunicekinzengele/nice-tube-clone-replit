@@ -1,9 +1,5 @@
-input {
-  width: 250px;
-  height: 35px;
-  margin-right: 9rem;
-  border: none;
-  margin-top: 10px;
+form{
+  width: 440px;
 }
 
 .Place_filter {
@@ -30,12 +26,23 @@ input {
   margin: auto;
   padding-right: 2rem;
 }
+.input__search{
+  width: 300px;
+  height: 35px;
+  margin-right: 5rem;
+  border: none;
+  margin-top: 10px;
+
+}
 .button_search {
   background-color: white;
   height: 37px;
   width: 60px;
-  left: 24rem;
+  /* left: 30rem; */
+  /* margin-right: 5rem; */
   position: absolute;
   border: none;
   margin-top: 10px;
+  z-index: 1;
+  left: 42rem;
 }

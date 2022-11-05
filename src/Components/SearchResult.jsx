@@ -3,10 +3,10 @@ import "../Styles/search.css";
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 
-export default function FilterSearch() {
+export default function SearchResult() {
   const { searchWord } = useParams();
   const [videoFound, setVideoFound] = useState([]);
-  const key = "AIzaSyB54oBHFCv-NoZwc6oAf8T56HXA2xNlIjo";
+  const key = import.meta.env.VITE_API_KEY;
   const fetchData = () => {
     fetch(
       `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=60&type=video&q=${searchWord}&safeSearch=none&key=AIzaSyB54oBHFCv-NoZwc6oAf8T56HXA2xNlIjo`,
@@ -30,7 +30,7 @@ export default function FilterSearch() {
           const channelId = item.id.videoId;
           return (
             <div className="videos__emplacement">
-              <Link to={`/ParentsContainersLecture/${channelId}`}>
+              <Link to={`/ParentsCardWatchVideo/${channelId}`}>
                 <img
                   src={item?.snippet?.thumbnails?.medium?.url}
                   alt="search"

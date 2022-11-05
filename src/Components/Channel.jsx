@@ -1,11 +1,11 @@
 import React from "react";
-import "../Styles/subscribe_channels.css";
+import "../Styles/channel.css";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { contexteUse } from "./UseContexte";
 import { useContext } from "react";
 
-export default function Subscribe_channels() {
+export default function Channel() {
   const clientId =
     "129788055226-glev0dl084clkeph94jhapm27uhc8tck.apps.googleusercontent.com";
 
@@ -35,7 +35,7 @@ export default function Subscribe_channels() {
 
           return (
             <div className="videos__emplacement">
-              <Link to={`/ParentsWatchSubscribe/${channelId}`}>
+              <Link to={`/ParentsCardChannelVideo/${channelId}`}>
                 <img src={item?.snippet?.thumbnails?.medium?.url} alt="sub" />
               </Link>
               <p className="title__video">{item.snippet.title}</p>
