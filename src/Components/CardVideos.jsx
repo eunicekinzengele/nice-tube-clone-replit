@@ -5,21 +5,25 @@ import { useEffect, useState } from "react";
 
 function CardVideos() {
   const clientId = import.meta.env.VITE_CLIENT_ID;
-  const key = /* import.meta.env.VITE_API_KEY;  */"AIzaSyB54oBHFCv-NoZwc6oAf8T56HXA2xNlIjo";
+  const key =import.meta.env.VITE_API_KEY; 
   const [video, setVideo] = useState([]);
   const params = useParams();
   const storage = localStorage.getItem("token");
   const fechUrl = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=33&regionCode=US&key=${key}`;
 
   useEffect(() => {
-    fetch(fechUrl)
+    fetch(fechUrl,  {
+      method: "GET",
+      headers: { Authorization: "Bearer " + storage },
+    })
       .then((response) => response.json())
       .then((data) => setVideo(data.items));
   }, []);
   return (
     <div className="div__container">
       <div className="row">
-        {video.map((item) => {
+        {video &&
+          video.map((item) => {
           const lecture = item.id;
           return (
             <div className="videos__emplacement">
