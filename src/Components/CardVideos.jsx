@@ -4,8 +4,10 @@ import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 function CardVideos() {
-  const clientId = import.meta.env.VITE_CLIENT_ID;
-  const key = import.meta.env.VITE_API_KEY;
+  const clientId = "129788055226-glev0dl084clkeph94jhapm27uhc8tck.apps.googleusercontent.com";
+  // import.meta.env.VITE_CLIENT_ID;
+  const key = "AIzaSyB54oBHFCv-NoZwc6oAf8T56HXA2xNlIjo"; 
+  //  import.meta.env.VITE_API_KEY;
   const [video, setVideo] = useState([]);
   const params = useParams();
   const storage = localStorage.getItem("token");
@@ -14,7 +16,9 @@ function CardVideos() {
   console.log("clé : ", key);
 
   useEffect(() => {
+
     fetch(fechUrl, {
+    // b84673ab21ecab1011b57af0232ad72095cd246d
       method: "GET",
       headers: { Authorization: "Bearer " + storage },
     })
@@ -26,6 +30,7 @@ function CardVideos() {
       <div className="row">
         {video &&
           video.map((item) => {
+
             const lecture = item.id;
             return (
               <div className="videos__emplacement">
