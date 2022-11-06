@@ -10,8 +10,8 @@ import { contexteUse } from "./UseContexte";
 function Login() {
   const navigate = useNavigate();
   const { token, setToken } = useContext(contexteUse);
-  const clientId =
-    "129788055226-glev0dl084clkeph94jhapm27uhc8tck.apps.googleusercontent.com";
+  const clientId ="129788055226-glev0dl084clkeph94jhapm27uhc8tck.apps.googleusercontent.com";
+    /*  import.meta.env.VITE_CLIENT_ID; */
   useEffect(() => {
     const setAuth2 = async () => {
       const auth2 = await loadAuth2(
@@ -20,7 +20,6 @@ function Login() {
         "https://www.googleapis.com/auth/youtube"
       );
       if (auth2.isSignedIn.get()) {
-        //auth2.signOut();
         updateUser(auth2.currentUser.get());
       } else {
         attachSignin(document.getElementById("started"), auth2);
@@ -40,17 +39,6 @@ function Login() {
       }
     );
   };
-
-  
-
-//   const onSucces = (res) => {
-//     const profilePicture = res.profileObj['imageUrl']
-//     localStorage.setItem('item', profilePicture)
-//     const accessToken = res.accessToken
-//     localStorage.setItem('token', accessToken)
-//     navigate('/dashbord')
-//  }
-
 
   const updateUser = (user) => {
     console.log(user.xc.access_token);

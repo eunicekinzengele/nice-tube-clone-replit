@@ -1,5 +1,5 @@
 .div__nav {
-  width: 1000px;
+  width: 73%;
   height: 80px;
   background-color: black;
   display: inline-block;
@@ -55,8 +55,9 @@ a :active {
   border-radius: 15px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 425px) {
   .div__nav {
-    margin-left: 7%;
-  }
+    width: 20%;
+  } 
+
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/channel.css";
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { contexteUse } from "./UseContexte";
 import { useContext } from "react";
 
@@ -11,9 +11,7 @@ export default function Channel() {
 
   const key = "AIzaSyB54oBHFCv-NoZwc6oAf8T56HXA2xNlIjo";
   const [videos, setVideos] = useState([]);
-  const { token, setToken } = useContext(contexteUse);
-  const storage = localStorage.getItem("token");
-
+  const {token} = useContext(contexteUse);
   useEffect(() => {
     console.log(token);
     fetch(

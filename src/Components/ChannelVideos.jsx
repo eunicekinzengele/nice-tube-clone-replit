@@ -9,7 +9,7 @@ export default function ChannelVideos() {
   const { channelId } = useParams();
   const { token, setToken } = useContext(contexteUse);
 
-  const key = "AIzaSyB54oBHFCv-NoZwc6oAf8T56HXA2xNlIjo";
+  const key = import.meta.env.VITE_API_KEY;
   const fetchData = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelId}&type=video&maxResults=45&key=${key}`;
 
   useEffect(() => {

@@ -14,7 +14,6 @@ function SideBar() {
             Tous
           </Link>
         </li>
-        
         <li>
           <Link to={"/ParentsCardChannel"} className="side_list">
             Abonnements

@@ -38,11 +38,10 @@ form{
   background-color: white;
   height: 37px;
   width: 60px;
-  /* left: 30rem; */
-  /* margin-right: 5rem; */
+ 
   position: absolute;
   border: none;
   margin-top: 10px;
-  z-index: 1;
+
   left: 42rem;
 }

@@ -5,17 +5,18 @@
   position: absolute;
   margin-top: 7rem;
   height: 30rem;
-  width: 38rem;
+  width: 70%;
 }
 .videos__emplacement {
   width: 12rem;
   height: 11rem;
   background-color: #424242;
   display: block;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   overflow-wrap: break-word;
 }
 .videos__emplacement :hover {
+  
 }
 .title__video {
   color: white;
@@ -31,11 +32,11 @@
   row-gap: 3rem;
   column-gap: 10px;
 }
-img {
+.img_logo {
   width: 240px;
   height: 150px;
 }
-img:hover {
+.img_logo :hover {
   -ms-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);

@@ -1,6 +1,6 @@
 .div__dashboard {
   color: white;
-  width: 200px;
+  width: 14%;
   background-color: #282626;
   height: 500px;
   position: absolute;
@@ -23,7 +23,6 @@
 .side_list{
   background-color: #424242;
   padding: 10px;
-  border: 2px solid black;
   border-radius: 15px;
   height: 30px;
   }
@@ -32,9 +31,12 @@
     color: white;
   }
 .profil_img{
-  width: 70px;
+  width: 150%;
   height:70px;
   border-radius: 50px;
+  /* margin-left: -8px; */
+  margin-right: px;
+  text-align: center;
 }
 .btn_logout {
   height: 50px;
@@ -46,7 +48,7 @@
   font-weight: bold;
   font-size: 20px;
   border: none;
-  width: 7rem;
+  width: 70%;
   margin-top: 3rem;
   margin-left: -3.5rem;
 }
@@ -61,6 +63,9 @@
  
 } */
 
+.link{
+  width: 700vw;
+}
 
 
 @media screen and (max-width: 768px) {

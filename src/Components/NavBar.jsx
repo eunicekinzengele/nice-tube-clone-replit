@@ -2,11 +2,16 @@ import React from "react";
 import "../Styles/nav.css";
 import image from "../Images/logo_NiceTube.png";
 import InputSearch from "./InputSearch";
+// import { useMediaQuery } from 'react-responsive'
+
 
 function NavBar() {
+  // const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+  // const isMobile = useMediaQuery({ query: '(max-width: 425px)' })
+
   return (
     <div className="div__nav">
-      <img className="img__logo" src={image} />
+     <img className="img__logo" src={image} />
       <ul>
         <InputSearch />
       </ul>
