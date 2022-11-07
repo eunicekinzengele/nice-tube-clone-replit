@@ -5,7 +5,7 @@ import { Link} from "react-router-dom";
 import { contexteUse } from "./UseContexte";
 import { useContext } from "react";
 
-export default function Channel() {
+export default function Subscribed_channels() {
   const clientId =
     "129788055226-glev0dl084clkeph94jhapm27uhc8tck.apps.googleusercontent.com";
 
