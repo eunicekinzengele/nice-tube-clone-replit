@@ -1,6 +1,17 @@
-- Voir le projet sur github sous le lien: "https://github.com/eunicekinzengele/nice-tube-clone-replit"
-- Cloner le projet 
+J'ai crée mon application avec react avec VITE
+
+Je l'ai gardé en ligne sur github sous le lien:  "https://github.com/eunicekinzengele/nice-tube-clone-replit"
+
+- Cloner le projet en tapant la commande "git clone lien"
+
 - Le lancer avec la commande "npm run dev"
+
+J'ai caché mes différentes clés valeurs dans les variables d'environnement 
+
+Quelques dependances installées :
+   -react-google-login
+   - react-icons
+   - react-router-dom
 
 
 

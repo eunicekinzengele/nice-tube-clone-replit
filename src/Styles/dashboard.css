@@ -34,9 +34,8 @@
   width: 150%;
   height:70px;
   border-radius: 50px;
-  /* margin-left: -8px; */
+  margin-left: -15px;
   margin-right: px;
-  text-align: center;
 }
 .btn_logout {
   height: 50px;
@@ -57,11 +56,6 @@
   color: black;
   border: 1px solid black;
 }
-/* ul li a {
-  border: none;
-  background-color: #424242;
- 
-} */
 
 .link{
   width: 700vw;
