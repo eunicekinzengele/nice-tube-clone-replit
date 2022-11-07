@@ -30,6 +30,14 @@
     background-color: black;
     color: white;
   }
+/* .if_active{
+  background-color: black;
+    color: white;
+}
+.if_no_active{
+  background-color: #424242;
+  color: black;
+} */
 .profil_img{
   width: 150%;
   height:70px;

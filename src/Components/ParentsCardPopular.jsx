@@ -1,14 +1,14 @@
 import React from "react";
 import NavBar from "./NavBar";
 import SideBar from "./SideBar";
-import CardVideos from "./CardVideos";
+import Popular_videos_card from "./Popular_videos_card";
 
 export default function ParentsCardPopular() {
   return (
     <div className="exemple">
       <NavBar />
       <SideBar />
-      <CardVideos />
+      <Popular_videos_card />
     </div>
   );
 }

@@ -12,8 +12,13 @@
   height: 11rem;
   background-color: #424242;
   display: block;
-  /* overflow-y: hidden; */
-  overflow-wrap: break-word;
+  overflow-y: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  box-sizing: border-box;
+  
+  /* overflow-wrap: break-word; */
 }
 .videos__emplacement :hover {
   
@@ -22,7 +27,10 @@
   color: white;
   margin-right: 30px;
   font-size: 15px;
-  /* overflow:hidden; */
+  overflow:hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
   margin: auto;
   padding-right: 2rem;
 }

@@ -3,7 +3,7 @@ import "../Styles/container.css";
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-function CardVideos() {
+function Popular_videos_card() {
 
   const clientId = import.meta.env.VITE_CLIENT_ID;
   
@@ -40,9 +40,7 @@ function CardVideos() {
                     className="img_logo"
                     src={item.snippet.thumbnails.medium.url}
                   />
-                  <div className="div_title">
                     <p className="title__video">{item.snippet.title}</p>
-                  </div>
                 </Link>
               </div>
             );
@@ -52,4 +50,4 @@ function CardVideos() {
     </div>
   );
 }
-export default CardVideos;
+export default Popular_videos_card;

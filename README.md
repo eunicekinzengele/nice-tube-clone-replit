@@ -1,12 +1,18 @@
 J'ai crée mon application avec react avec VITE
 
-Je l'ai gardé en ligne sur github sous le lien:  "https://github.com/eunicekinzengele/nice-tube-clone-replit"
+Je l'ai gardé en ligne sur github sous le [lien]("https://github.com/eunicekinzengele/nice-tube-clone-replit")
 
-- Cloner le projet en tapant la commande "git clone lien"
+- Cloner le projet en tapant la commande
+    ```
+    git clone https://github.com/eunicekinzengele/nice-tube-clone-replit.git
+    ```
 
-- Le lancer avec la commande "npm run dev"
+- Le lancer avec la commande
+    ```
+    npm install
+    ```
 
-J'ai caché mes différentes clés valeurs dans les variables d'environnement 
+J'ai caché mes différentes clés valeurs dans les variables d'environnement
 
 Quelques dependances installées :
    -react-google-login

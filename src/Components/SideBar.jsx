@@ -10,7 +10,8 @@ function SideBar() {
       <div className="container_list">
       <ul className="list__dashboard">
         <li>
-          <Link to={"/ParentsCardPopular"} className="side_list">
+          <Link 
+          to={"/ParentsCardPopular"} className="side_list">
             Tous
           </Link>
         </li>
