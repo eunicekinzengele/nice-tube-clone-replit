@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/nav.css";
 import image from "../Images/logo_NiceTube.png";
-import InputSearch from "./InputSearch";
+import InputSearch from "./Search_input";
 // import { useMediaQuery } from 'react-responsive'
 
 
