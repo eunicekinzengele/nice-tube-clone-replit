@@ -1,14 +1,14 @@
 import React from "react";
 import NavBar from "./NavBar";
 import SideBar from "./SideBar";
-import ChannelVideos from "./ChannelVideos";
+import Video_of_subscribed_channels from "./Video_of_subscribed_channels";
 
 export default function ParentsCardChannelVideo() {
   return (
     <div>
       <NavBar />
       <SideBar />
-      <ChannelVideos />
+      <Video_of_subscribed_channels />
     </div>
   );
 }
