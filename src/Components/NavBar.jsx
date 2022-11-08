@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/nav.css";
 import image from "../Images/logo_NiceTube.png";
-import InputSearch from "./Search_input";
+import SearchInput from "./SearchInput";
 // import { useMediaQuery } from 'react-responsive'
 
 
@@ -13,7 +13,7 @@ function NavBar() {
     <div className="div__nav">
      <img className="img__logo" src={image} />
       <ul>
-        <InputSearch />
+        <SearchInput />
       </ul>
     </div>
   );
