@@ -4,7 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import { contexteUse } from "./UseContexte";
 import { useContext } from "react";
 
-export default function Video_of_subscribed_channels() {
+export default function VideoOfSubscribedChannels() {
   const [videos, setVideos] = useState([]);
   const { channelId } = useParams();
   const { token, setToken } = useContext(contexteUse);
