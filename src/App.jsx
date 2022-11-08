@@ -2,11 +2,11 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { gapi, loadAuth2 } from "gapi-script";
 import Login from "./Components/Login";
-import ParentsCardPopular from "./Components/ParentsCardPopular";
-import ParentsCardChannel from "./Components/ParentsCardChannel"
-import ParentsCardChannelVideo from "./Components/ParentsCardChannelVideo"
-import ParentsCardSearchResult from "./Components/ParentsCardSearchResult"
-import ParentsCardWatchVideo from "./Components/ParentsCardWatchVideo"
+import ParentsCardPopular from "./Components/ContainerComponents/ParentsCardPopular";
+import ParentsCardChannel from "./Components/ContainerComponents/DisplayOfSubscribedChannels"
+import ParentsCardChannelVideo from "./Components/ContainerComponents/ParentsCardChannelVideo"
+import ParentsCardSearchResult from "./Components/ContainerComponents/ParentsCardSearchResult"
+import ParentsCardWatchVideo from "./Components/ContainerComponents/ParentsCardWatchVideo"
 import { useEffect, useState } from "react";
 import { contexteUse } from "./Components/UseContexte";
 // import 'bootstrap/dist/css/bootstrap.min.css'
