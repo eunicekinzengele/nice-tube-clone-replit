@@ -2,7 +2,7 @@ import React from "react";
 import "../Styles/channel.css";
 import { useEffect, useState } from "react";
 import { Link} from "react-router-dom";
-import { contexteUse } from "./UseContexte";
+import { contexteUse } from "./Contextes/UseContexte";
 import { useContext } from "react";
 
 export default function SubscribedChannels() {

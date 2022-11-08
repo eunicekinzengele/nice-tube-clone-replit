@@ -5,7 +5,7 @@ import { FcGoogle } from "react-icons/fc";
 import { gapi, loadAuth2 } from "gapi-script";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
-import { contexteUse } from "./UseContexte";
+import { contexteUse } from "./Contextes/UseContexte";
 
 function Login() {
   const navigate = useNavigate();

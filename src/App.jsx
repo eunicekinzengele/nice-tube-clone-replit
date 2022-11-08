@@ -8,7 +8,7 @@ import ParentsCardChannelVideo from "./Components/Pages/ParentsCardChannelVideo"
 import ParentsCardSearchResult from "./Components/Pages/ParentsCardSearchResult"
 import ParentsCardWatchVideo from "./Components/Pages/ParentsCardWatchVideo"
 import { useEffect, useState } from "react";
-import { contexteUse } from "./Components/UseContexte";
+import { contexteUse } from "./Components/Contextes/UseContexte";
 // import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {

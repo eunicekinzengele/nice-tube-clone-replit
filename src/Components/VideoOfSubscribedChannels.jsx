@@ -1,7 +1,7 @@
 import "../Styles/watchSubscribe.css";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { contexteUse } from "./UseContexte";
+import { contexteUse } from "./Contextes/UseContexte";
 import { useContext } from "react";
 
 export default function VideoOfSubscribedChannels() {
