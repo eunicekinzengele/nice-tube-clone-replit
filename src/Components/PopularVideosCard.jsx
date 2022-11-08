@@ -3,7 +3,7 @@ import "../Styles/container.css";
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-function Popular_videos_card() {
+function PopularVideosCard() {
 
   const clientId = import.meta.env.VITE_CLIENT_ID;
   
@@ -50,4 +50,4 @@ function Popular_videos_card() {
     </div>
   );
 }
-export default Popular_videos_card;
+export default PopularVideosCard;
