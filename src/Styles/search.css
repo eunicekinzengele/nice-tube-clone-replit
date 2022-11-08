@@ -42,6 +42,6 @@ form{
   position: absolute;
   border: none;
   margin-top: 10px;
-
+  cursor: pointer;
   left: 42rem;
 }
