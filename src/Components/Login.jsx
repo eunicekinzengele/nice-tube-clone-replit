@@ -10,8 +10,9 @@ import { contexteUse } from "./Contextes/UseContexte";
 function Login() {
   const navigate = useNavigate();
   const { token, setToken } = useContext(contexteUse);
-  const clientId ="129788055226-glev0dl084clkeph94jhapm27uhc8tck.apps.googleusercontent.com";
-    /*  import.meta.env.VITE_CLIENT_ID; */
+  const clientId =
+    "129788055226-glev0dl084clkeph94jhapm27uhc8tck.apps.googleusercontent.com";
+  /*  import.meta.env.VITE_CLIENT_ID; */
   useEffect(() => {
     const setAuth2 = async () => {
       const auth2 = await loadAuth2(
@@ -48,8 +49,6 @@ function Login() {
     localStorage.setItem("profilUser", profileImg);
     console.log("bonjour", profileImg);
     navigate("/ParentsCardPopular");
-
-
 
     console.log(user);
   };

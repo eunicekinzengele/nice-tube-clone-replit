@@ -6,7 +6,6 @@ import { useParams, Link } from "react-router-dom";
 export default function SearchResult() {
   const { searchWord } = useParams();
   const [videoFound, setVideoFound] = useState([]);
-  const key = import.meta.env.VITE_API_KEY;
   const fetchData = () => {
     fetch(
       `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=60&type=video&q=${searchWord}&safeSearch=none&key=AIzaSyB54oBHFCv-NoZwc6oAf8T56HXA2xNlIjo`,

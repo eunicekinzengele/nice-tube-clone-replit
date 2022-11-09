@@ -7,7 +7,7 @@ import { useContext } from "react";
 export default function VideoOfSubscribedChannels() {
   const [videos, setVideos] = useState([]);
   const { channelId } = useParams();
-  const { token, setToken } = useContext(contexteUse);
+  const { token } = useContext(contexteUse);
 
   const key = import.meta.env.VITE_API_KEY;
   const fetchData = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelId}&type=video&maxResults=45&key=${key}`;

@@ -6,10 +6,10 @@ import { contexteUse } from "./Contextes/UseContexte";
 import { useContext } from "react";
 
 export default function SubscribedChannels() {
-  const clientId =
-    "129788055226-glev0dl084clkeph94jhapm27uhc8tck.apps.googleusercontent.com";
+  // const clientId =
+  //   "129788055226-glev0dl084clkeph94jhapm27uhc8tck.apps.googleusercontent.com";
 
-  const key = "AIzaSyB54oBHFCv-NoZwc6oAf8T56HXA2xNlIjo";
+  // const key = "AIzaSyB54oBHFCv-NoZwc6oAf8T56HXA2xNlIjo";
   const [videos, setVideos] = useState([]);
   const {token} = useContext(contexteUse);
   useEffect(() => {

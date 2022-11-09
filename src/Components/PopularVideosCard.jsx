@@ -4,14 +4,9 @@ import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 function PopularVideosCard() {
-
-  const clientId = import.meta.env.VITE_CLIENT_ID;
-  
-  const key =  import.meta.env.VITE_API_KEY;
-  
+  const key = import.meta.env.VITE_API_KEY;
 
   const [video, setVideo] = useState([]);
-  const params = useParams();
   const storage = localStorage.getItem("token");
   const fechUrl = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=33&regionCode=US&key=${key}`;
 
@@ -19,7 +14,7 @@ function PopularVideosCard() {
 
   useEffect(() => {
     // b84673ab21ecab1011b57af0232ad72095cd246d
-    fetch(fechUrl,  {
+    fetch(fechUrl, {
       method: "GET",
       headers: { Authorization: "Bearer " + storage },
     })
@@ -31,7 +26,6 @@ function PopularVideosCard() {
       <div className="row">
         {video &&
           video.map((item) => {
-
             const lecture = item.id;
             return (
               <div className="videos__emplacement">
@@ -40,12 +34,11 @@ function PopularVideosCard() {
                     className="img_logo"
                     src={item.snippet.thumbnails.medium.url}
                   />
-                    <p className="title__video">{item.snippet.title}</p>
+                  <p className="title__video">{item.snippet.title}</p>
                 </Link>
               </div>
             );
           })}
-
       </div>
     </div>
   );

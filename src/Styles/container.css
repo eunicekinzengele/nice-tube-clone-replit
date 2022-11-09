@@ -13,16 +13,11 @@
   background-color: #424242;
   display: block;
   overflow-y: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  box-sizing: border-box;
  
-  
-  /* overflow-wrap: break-word; */
 }
 .videos__emplacement :hover {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
+
 }
 .title__video {
   color: white;

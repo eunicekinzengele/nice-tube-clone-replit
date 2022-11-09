@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React, { } from "react";
 import "../Styles/logout.css";
-import { gapi, loadAuth2 } from "gapi-script";
+import { gapi } from "gapi-script";
 import { useNavigate } from "react-router-dom";
 
 const Logout = () => {
