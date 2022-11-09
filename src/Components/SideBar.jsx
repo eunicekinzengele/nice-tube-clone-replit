@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/dashboard.css";
+import "../Styles/sidebar.css";
 import Logout from "./Logout";
 import { Link } from "react-router-dom";
 

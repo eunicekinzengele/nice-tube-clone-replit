@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/channel.css";
+import "../Styles/subscribedchannels.css";
 import { useEffect, useState } from "react";
 import { Link} from "react-router-dom";
 import { contexteUse } from "./Contextes/UseContexte";

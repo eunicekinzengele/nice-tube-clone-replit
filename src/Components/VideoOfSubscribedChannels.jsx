@@ -1,4 +1,4 @@
-import "../Styles/watchSubscribe.css";
+import "../Styles/videoofsbscribechannels.css";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { contexteUse } from "./Contextes/UseContexte";

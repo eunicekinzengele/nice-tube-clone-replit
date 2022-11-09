@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/nav.css";
+import "../Styles/navbar.css";
 import image from "../Images/logo_NiceTube.png";
 import SearchInput from "./SearchInput";
 // import { useMediaQuery } from 'react-responsive'

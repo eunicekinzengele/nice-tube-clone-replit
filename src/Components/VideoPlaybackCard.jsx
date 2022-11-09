@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/lecture.css";
+import "../Styles/videoplayback.css";
 import { useParams } from "react-router-dom";
 // import { useState } from "react";
 
