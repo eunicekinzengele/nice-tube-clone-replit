@@ -1,6 +1,6 @@
 .div__dashboard {
   color: white;
-  width: 14%;
+  width: 15%;
   background-color: #282626;
   height: 500px;
   position: absolute;
@@ -23,23 +23,23 @@
 .side_list{
   background-color: #424242;
   padding: 10px;
-  border-radius: 15px;
-  height: 30px;
+  border-radius: 20px;
+  height: 20px;
+  width: 70%;
+  margin-right:2rem;
+  text-align: center;
+  font-size: 20px;
   }
 .side_list:hover {
     background-color: black;
     color: white;
   }
-/* .if_active{
-  background-color: black;
-    color: white;
+.side_list:active{
+  background-color: red;
 }
-.if_no_active{
-  background-color: #424242;
-  color: black;
-} */
+
 .profil_img{
-  width: 150%;
+  width: 80%;
   height:70px;
   border-radius: 50px;
   margin-left: -15px;
