@@ -2,8 +2,10 @@ import React from "react";
 import "../Styles/popularvideocard.css";
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Loader from "./Loader";
 
 function PopularVideosCard() {
+  const [loading, setLoading] = useState(true)
   const key = import.meta.env.VITE_API_KEY;
 
   const [video, setVideo] = useState([]);
@@ -19,12 +21,14 @@ function PopularVideosCard() {
       headers: { Authorization: "Bearer " + storage },
     })
       .then((response) => response.json())
-      .then((data) => setVideo(data.items));
+      .then((data) => {setVideo(data.items)
+    setLoading(false)});
+
   }, [storage]);
   return (
     <div className="div__container">
       <div className="row">
-        {video &&
+        {!loading ? video &&
           video.map((item) => {
             const lecture = item.id;
             return (
@@ -38,7 +42,7 @@ function PopularVideosCard() {
                 </Link>
               </div>
             );
-          })}
+          }):<Loader />}
       </div>
     </div>
   );

@@ -9,6 +9,7 @@ import ParentsCardSearchResult from "./Components/Pages/ParentsCardSearchResult"
 import ParentsCardWatchVideo from "./Components/Pages/ParentsCardWatchVideo"
 import { useEffect, useState } from "react";
 import { contexteUse } from "./Components/Contextes/UseContexte";
+import Loader from "./Components/Loader";
 // import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
@@ -59,6 +60,10 @@ function App() {
             path="/ParentsCardSearchResult:searchWord"
             element={<ParentsCardSearchResult />}
           ></Route>
+          <Route 
+            path="/loader" 
+            element={<Loader />}>
+          </Route>
         </Routes>
       </div>
     </contexteUse.Provider>
