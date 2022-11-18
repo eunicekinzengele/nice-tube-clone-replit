@@ -28,7 +28,7 @@ export default function SubscribedChannels() {
   return (
     <div className="container_subscribe">
       <div className="row">
-        {videos?.map((item) => {
+        {loading? <Loader/>: videos?.map((item) => {
           const channelId = item.snippet.resourceId.channelId;
 
           return (

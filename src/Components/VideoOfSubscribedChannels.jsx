@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { contexteUse } from "./Contextes/UseContexte";
 import { useContext } from "react";
+import Loader from "./Loader";  /* ici */
+
 
 export default function VideoOfSubscribedChannels() {
   const [videos, setVideos] = useState([]);

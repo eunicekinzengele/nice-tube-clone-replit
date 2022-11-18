@@ -4,21 +4,24 @@
   background-color: #282626;
   height: 500px;
   position: absolute;
-  margin-top: 130px;
+  margin-top: 110px;
   margin-left: 150px;
   position: fixed;
   text-align: center;
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
 
 .list__dashboard {
+  margin-top: 25px;
   display: grid;
   row-gap: 15px;
   text-align: center;
+  /* vertical-align: middle;
+  list-style-position: inside; */
+
 }
 .container_list{
   text-align: center;
-
 }
 .side_list{
   background-color: #424242;
@@ -26,29 +29,47 @@
   border-radius: 20px;
   height: 20px;
   width: 70%;
-  margin-right:2rem;
+  /* margin-right:2rem; */
   text-align: center;
-  font-size: 20px;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+
   }
+
+  .side_list_red{
+    background-color: #df1212;
+    padding: 10px;
+    border-radius: 20px;
+    height: 20px;
+    width: 70%;
+    /* margin-right:2rem; */
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    }
+
 .side_list:hover {
     background-color: black;
     color: white;
   }
-.side_list:active{
+/* .isActiveButton{
   background-color: red;
+
+
 }
-isActiveButton{
-  background-color: red;
-}
-isNotActiveButton{
-  background-color: #424242;
-}
+.isNotActiveButton{
+  /* background-color: #424242; */
+/* } */
 
 .profil_img{
-  width: 80%;
+  /* width: 80%; */
   height:70px;
   border-radius: 50px;
-  margin-left: -15px;
+  margin-left: 0px;
   margin-right: px;
 }
 .btn_logout {
@@ -59,11 +80,11 @@ isNotActiveButton{
   background-color: black;
   color: white;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 17px;
   border: none;
   width: 70%;
   margin-top: 3rem;
-  margin-left: -3.5rem;
+  margin-left: -3.7rem;
 }
 .btn_logout:hover {
   background-color: white;

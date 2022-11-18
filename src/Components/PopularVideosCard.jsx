@@ -6,13 +6,14 @@ import Loader from "./Loader";  /* ici */
 
 function PopularVideosCard() {
   const [loading, setLoading] = useState(true)   /* ici */
-  const key = /* import.meta.env.VITE_API_KEY; */"AIzaSyB54oBHFCv-NoZwc6oAf8T56HXA2xNlIjo";
+  const key = import.meta.env.VITE_API_KEY;
 
   const [video, setVideo] = useState([]);
   const storage = localStorage.getItem("token");
   const fechUrl = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=33&regionCode=US&key=${key}`;
 
   console.log("clé : ", key);
+  console.log("requete:", fechUrl);
 
   useEffect(() => {
     // b84673ab21ecab1011b57af0232ad72095cd246d
