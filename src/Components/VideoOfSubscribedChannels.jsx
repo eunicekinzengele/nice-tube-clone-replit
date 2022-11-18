@@ -7,6 +7,7 @@ import Loader from "./Loader";  /* ici */
 
 
 export default function VideoOfSubscribedChannels() {
+  const [loading, setLoading] = useState(true)   /* ici */
   const [videos, setVideos] = useState([]);
   const { channelId } = useParams();
   const { token } = useContext(contexteUse);
@@ -17,13 +18,14 @@ export default function VideoOfSubscribedChannels() {
   useEffect(() => {
     fetch(fetchData, { headers: { Authorization: "Bearer " + token } })
       .then((response) => response.json())
-      .then((data) => setVideos(data.items));
+      .then((data) => {setVideos(data.items)
+        setLoading(false)});
   }, [token]);
 
   return (
     <div className="div_watch_sub">
       <div className="row">
-        {videos?.map((item) => {
+        { loading ? <Loader/> : videos?.map((item) => {
           const channelId = item.id.videoId;
 
           return (
