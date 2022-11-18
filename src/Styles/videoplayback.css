@@ -2,7 +2,7 @@
   color: white;
   background-color: #0a0d0e;
   /* background-color: red; */
-  margin-left: 18.5rem;
+  margin-left: 21rem;
   position: absolute;
   margin-top: 7rem;
   height: 30rem;
@@ -10,5 +10,5 @@
 }
 .watch {
   width: 30rem;
-  height: 16rem;
+  height: 10rem;
 }

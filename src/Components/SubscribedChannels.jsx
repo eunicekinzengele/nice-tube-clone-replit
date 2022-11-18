@@ -4,12 +4,11 @@ import { useEffect, useState } from "react";
 import { Link} from "react-router-dom";
 import { contexteUse } from "./Contextes/UseContexte";
 import { useContext } from "react";
+import Loader from "./Loader";  /* ici */
+
 
 export default function SubscribedChannels() {
-  // const clientId =
-  //   "129788055226-glev0dl084clkeph94jhapm27uhc8tck.apps.googleusercontent.com";
-
-  // const key = "AIzaSyB54oBHFCv-NoZwc6oAf8T56HXA2xNlIjo";
+  const [loading, setLoading] = useState(true)   /* ici */
   const [videos, setVideos] = useState([]);
   const {token} = useContext(contexteUse);
   useEffect(() => {
@@ -22,7 +21,8 @@ export default function SubscribedChannels() {
       }
     )
       .then((response) => response.json())
-      .then((data) => setVideos(data.items));
+      .then((data) => {setVideos(data.items)
+      setLoading(false)});
   }, [token]);
 
   return (

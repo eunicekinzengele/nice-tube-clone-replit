@@ -1,5 +1,4 @@
 .div__container {
-  color: white;
   background-color: #0a0d0e;
   margin-left: 19rem;
   position: absolute;
@@ -10,25 +9,18 @@
 .videos__emplacement {
   width: 12rem;
   height: 11rem;
-  background-color: #424242;
+  background-color: red;
   display: block;
-  overflow-y: hidden;
- 
-}
-.videos__emplacement :hover {
-  /* transform: scale(1.1); */
-
+  overflow-x: hidden;
+  border: 2px solid white;
+  border-radius: 10px;
 }
 .title__video {
-  color: white;
+  color: red;
   margin-right: 30px;
-  font-size: 15px;
-  overflow:hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
+  font-size: 50px;
   margin: auto;
-  padding-right: 2rem;
+ 
 }
 .row {
   display: flex;

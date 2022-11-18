@@ -10,8 +10,8 @@ export default function VideoPlaybackCard() {
     <div className="div__lecture">
       <div className="watch">
         <iframe
-          width="760"
-          height="500"
+          width="650"
+          height="400"
           src={`https://www.youtube.com/embed/${lecture}`}
           title="YouTube video player"
           frameborder="0"

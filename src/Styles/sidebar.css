@@ -37,6 +37,12 @@
 .side_list:active{
   background-color: red;
 }
+isActiveButton{
+  background-color: red;
+}
+isNotActiveButton{
+  background-color: #424242;
+}
 
 .profil_img{
   width: 80%;
