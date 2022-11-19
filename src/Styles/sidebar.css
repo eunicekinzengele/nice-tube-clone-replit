@@ -5,7 +5,7 @@
   height: 500px;
   position: absolute;
   margin-top: 110px;
-  margin-left: 150px;
+  margin-left: 160px;
   position: fixed;
   text-align: center;
   /* vertical-align: middle; */
@@ -16,6 +16,7 @@
   display: grid;
   row-gap: 15px;
   text-align: center;
+ 
   /* vertical-align: middle;
   list-style-position: inside; */
 
@@ -34,7 +35,7 @@
   font-size: 15px;
   color: white;
   text-decoration: none;
-  margin-left: 25px;
+  /* margin-left: 25px; */
 
   }
 
@@ -49,27 +50,19 @@
     font-size: 15px;
     color: white;
     text-decoration: none;
-    margin-left: 25px;
+    /* margin-left: 25px; */
     }
 
 .side_list:hover {
     background-color: black;
     color: white;
   }
-/* .isActiveButton{
-  background-color: red;
-
-
-}
-.isNotActiveButton{
-  /* background-color: #424242; */
-/* } */
 
 .profil_img{
   /* width: 80%; */
   height:70px;
   border-radius: 50px;
-  margin-left: 0px;
+  /* margin-left: 0px; */
   margin-right: px;
 }
 .btn_logout {
@@ -84,7 +77,7 @@
   border: none;
   width: 70%;
   margin-top: 3rem;
-  margin-left: -3.7rem;
+  margin-left: -5rem;
 }
 .btn_logout:hover {
   background-color: white;

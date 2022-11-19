@@ -3,8 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import { gapi, loadAuth2 } from "gapi-script";
 import Login from "./Components/Login";
 import ParentsCardPopular from "./Components/Pages/ParentsCardPopular";
-import ParentsCardChannel from "./Components/Pages/DisplayOfSubscribedChannels"
-import ParentsCardChannelVideo from "./Components/Pages/ParentsCardChannelVideo"
+import PageOfSubscribedChannels from "./Components/Pages/PageOfSubscribedChannels"
+import PageOfVideoSubscribed from "./Components/Pages/PageOfVideoSubscribed"
 import ParentsCardSearchResult from "./Components/Pages/ParentsCardSearchResult"
 import ParentsCardWatchVideo from "./Components/Pages/ParentsCardWatchVideo"
 import { useEffect, useState } from "react";
@@ -50,11 +50,11 @@ function App() {
           />
           <Route
             path="/ParentsCardChannel"
-            element={<ParentsCardChannel />}
+            element={<PageOfSubscribedChannels />}
           ></Route>
           <Route
             path="/ParentsCardChannelVideo/:channelId"
-            element={<ParentsCardChannelVideo />}
+            element={<PageOfVideoSubscribed />}
           ></Route>
           <Route
             path="/ParentsCardSearchResult:searchWord"

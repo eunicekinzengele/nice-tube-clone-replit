@@ -9,9 +9,8 @@
 .videos__emplacement {
   width: 12rem;
   height: 11rem;
-  background-color: red;
   display: block;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   border: 2px solid white;
   border-radius: 10px;
 }
