@@ -2,7 +2,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { gapi, loadAuth2 } from "gapi-script";
 import Login from "./Components/Login";
-import ParentsCardPopular from "./Components/Pages/ParentsCardPopular";
+import PageOfPopularVideo from "./Components/Pages/PageOfPopularVideo";
 import PageOfSubscribedChannels from "./Components/Pages/PageOfSubscribedChannels"
 import PageOfVideoSubscribed from "./Components/Pages/PageOfVideoSubscribed"
 import ParentsCardSearchResult from "./Components/Pages/ParentsCardSearchResult"
@@ -42,7 +42,7 @@ function App() {
           <Route path="/" element={<Login />}></Route>
           <Route
             path="/ParentsCardPopular"
-            element={<ParentsCardPopular />}
+            element={<PageOfPopularVideo />}
           ></Route>
           <Route
             path="/ParentsCardWatchVideo/:lecture"
