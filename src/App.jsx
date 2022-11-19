@@ -5,7 +5,7 @@ import Login from "./Components/Login";
 import PageOfPopularVideo from "./Components/Pages/PageOfPopularVideo";
 import PageOfSubscribedChannels from "./Components/Pages/PageOfSubscribedChannels"
 import PageOfVideoSubscribed from "./Components/Pages/PageOfVideoSubscribed"
-import ParentsCardSearchResult from "./Components/Pages/ParentsCardSearchResult"
+import PageOfSearchResults from "./Components/Pages/PageOfSearchResults"
 import ParentsCardWatchVideo from "./Components/Pages/ParentsCardWatchVideo"
 import { useEffect, useState } from "react";
 import { contexteUse } from "./Components/Contextes/UseContexte";
@@ -58,7 +58,7 @@ function App() {
           ></Route>
           <Route
             path="/ParentsCardSearchResult:searchWord"
-            element={<ParentsCardSearchResult />}
+            element={<PageOfSearchResults />}
           ></Route>
           <Route 
             path="/loader" 
