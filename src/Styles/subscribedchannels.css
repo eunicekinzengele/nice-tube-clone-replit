@@ -14,9 +14,10 @@
   display: block;
   border-radius: 10px;
 }
-.title__video {
+.channel_name {
   color: white;
   margin-right: 30px;
   font-size: 15px;
   margin: auto;
+  background-color: red;
 }
