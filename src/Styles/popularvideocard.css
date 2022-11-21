@@ -5,6 +5,7 @@
   margin-top: 7rem;
   height: 30rem;
   width: 70%;
+  /* margin-bottom: 50px; */
 }
 .videos__emplacement {
   width: 12rem;
@@ -12,6 +13,8 @@
   display: block;
   border: 2px solid white;
   border-radius: 10px;
+  margin-bottom: 40px;
+  margin-top: -30px;
 }
 .title__video {
   color: white;
@@ -20,13 +23,16 @@
   margin: auto;
   text-decoration: none;
 }
+.card_link{
+  text-decoration: none;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 3rem;
+  row-gap: 2rem;
   column-gap: 10px;
 }
-.img_logo {
+.img_video {
   width: 240px;
   height: 150px;
 }

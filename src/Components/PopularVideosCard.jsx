@@ -33,15 +33,15 @@ function PopularVideosCard() {
           video.map((item) => {
             const lecture = item.id;
             return (
+                <Link to={`/PageOfVideoPlayback/${lecture}`} className="card_link">
               <div className="videos__emplacement">
-                <Link to={`/PageOfVideoPlayback/${lecture}`}>
                   <img
-                    className="img_logo"
+                    className="img_video"
                     src={item.snippet.thumbnails.medium.url}
                   />
                   <p className="title__video">{item.snippet.title}</p>
-                </Link>
               </div>
+                </Link>
             );
           })}  
       </div>

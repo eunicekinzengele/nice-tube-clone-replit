@@ -85,10 +85,6 @@
   border: 1px solid black;
 }
 
-.link{
-  width: 700vw;
-}
-
 
 @media screen and (max-width: 768px) {
   .div__dashboard {

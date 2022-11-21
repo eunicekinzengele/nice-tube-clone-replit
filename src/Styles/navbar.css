@@ -38,15 +38,9 @@ ul li a {
   text-decoration: none;
   margin-top: 20px;
   color: white;
+  /* text-decoration: none; */
 }
-a :hover {
-  background-color: #e0e0e0;
-  color: black;
-}
-a :active {
-  background-color: #e0e0e0;
-  color: black;
-}
+
 .liste_nav {
   background-color: #424242;
   text-decoration: none;
