@@ -30,7 +30,7 @@ body {
   margin: auto;
   margin-top: -4px;
 }
-p {
+.connexion_title{
   margin: auto;
   position: absolute;
   margin-left: 8rem;

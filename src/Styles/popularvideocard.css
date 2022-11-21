@@ -10,16 +10,14 @@
   width: 12rem;
   height: 11rem;
   display: block;
-  /* overflow-x: hidden; */
   border: 2px solid white;
   border-radius: 10px;
 }
 .title__video {
-  color: red;
+  color: white;
   margin-right: 30px;
   font-size: 50px;
   margin: auto;
- 
 }
 .row {
   display: flex;

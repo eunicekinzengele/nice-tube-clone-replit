@@ -56,7 +56,7 @@ function Login() {
     <div className="connexion_space">
       <div className="general">
         <img className="logo__connexion" src={Image} />
-        <p>Sign in with</p>
+        <p className="connexion_title">Sign in with</p>
         <button
           id="started"
           className="button_login btn btn-danger d-block text-center"
