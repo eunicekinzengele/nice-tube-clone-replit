@@ -6,7 +6,7 @@ import PageOfPopularVideo from "./Components/Pages/PageOfPopularVideo";
 import PageOfSubscribedChannels from "./Components/Pages/PageOfSubscribedChannels"
 import PageOfVideoSubscribed from "./Components/Pages/PageOfVideoSubscribed"
 import PageOfSearchResults from "./Components/Pages/PageOfSearchResults"
-import ParentsCardWatchVideo from "./Components/Pages/ParentsCardWatchVideo"
+import PageOfVideoPlayback from "./Components/Pages/PageOfVideoPlayback"
 import { useEffect, useState } from "react";
 import { contexteUse } from "./Components/Contextes/UseContexte";
 import Loader from "./Components/Loader";
@@ -41,23 +41,23 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />}></Route>
           <Route
-            path="/ParentsCardPopular"
+            path="/PageOfPopularVideo"
             element={<PageOfPopularVideo />}
           ></Route>
           <Route
-            path="/ParentsCardWatchVideo/:lecture"
-            element={<ParentsCardWatchVideo />}
+            path="/PageOfVideoPlayback/:lecture"
+            element={<PageOfVideoPlayback />}
           />
           <Route
-            path="/ParentsCardChannel"
+            path="/PageOfSubscribedChannels"
             element={<PageOfSubscribedChannels />}
           ></Route>
           <Route
-            path="/ParentsCardChannelVideo/:channelId"
+            path="/PageOfVideoSubscribed/:channelId"
             element={<PageOfVideoSubscribed />}
           ></Route>
           <Route
-            path="/ParentsCardSearchResult:searchWord"
+            path="/PageOfSearchResults:searchWord"
             element={<PageOfSearchResults />}
           ></Route>
           <Route 

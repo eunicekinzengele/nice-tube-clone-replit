@@ -14,7 +14,7 @@ function SideBar() {
             <NavLink className={(nav)=>
            nav.isActive ? 'side_list_red' : 'side_list '
           }
-             to={"/ParentsCardPopular"} >
+             to={"/PageOfPopularVideo"} >
             {/* <li className="side_list"> */}
               Acceueil
             {/* </li> */}
@@ -23,7 +23,7 @@ function SideBar() {
             <NavLink className={(nav)=>
               nav.isActive ? 'side_list_red' : 'side_list '
             }
-             to={"/ParentsCardChannel"} >
+             to={"/PageOfSubscribedChannels"} >
              {/* <li className="side_list"> */}
               Abonnements
               {/* </li> */}

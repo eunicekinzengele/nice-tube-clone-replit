@@ -48,7 +48,7 @@ function Login() {
     const profileImg = user.getBasicProfile().getImageUrl();
     localStorage.setItem("profilUser", profileImg);
     console.log("bonjour", profileImg);
-    navigate("/ParentsCardPopular");
+    navigate("/PageOfPopularVideo");
 
     console.log(user);
   };

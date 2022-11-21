@@ -3,7 +3,7 @@ import NavBar from "../NavBar";
 import SideBar from "../SideBar";
 import PopularVideosCard from "../PopularVideosCard";
 
-export default function ParentsCardPopular() {
+export default function PageOfPopularVideo() {
   return (
     <div className="exemple">
       <NavBar />

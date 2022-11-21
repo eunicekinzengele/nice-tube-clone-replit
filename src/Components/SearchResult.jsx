@@ -29,7 +29,7 @@ export default function SearchResult() {
           const channelId = item.id.videoId;
           return (
             <div className="videos__emplacement">
-              <Link to={`/ParentsCardWatchVideo/${channelId}`}>
+              <Link to={`/PageOfVideoPlayback/${channelId}`}>
                 <img
                   src={item?.snippet?.thumbnails?.medium?.url}
                   alt="search"

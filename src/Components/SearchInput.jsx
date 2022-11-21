@@ -17,7 +17,7 @@ export default function SearchInput() {
         onChange={handleChange}
         value={inputSearch}
       />
-      <Link className="" to={`/ParentsCardSearchResult${inputSearch}`}>
+      <Link className="" to={`/PageOfSearchResults${inputSearch}`}>
         <button className="button_search" type="submit">
           <BsSearch />
         </button>

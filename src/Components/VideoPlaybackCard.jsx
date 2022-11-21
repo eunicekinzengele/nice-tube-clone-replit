@@ -1,11 +1,9 @@
 import React from "react";
 import "../Styles/videoplayback.css";
 import { useParams } from "react-router-dom";
-import { useState } from "react";
 
 export default function VideoPlaybackCard() {
   const { lecture } = useParams();
-  setLoading(false);
   return (
     <div className="div__lecture">
       <div className="watch">

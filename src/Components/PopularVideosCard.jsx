@@ -2,10 +2,10 @@ import React from "react";
 import "../Styles/popularvideocard.css";
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Loader from "./Loader";  /* ici */
+import Loader from "./Loader";
 
 function PopularVideosCard() {
-  const [loading, setLoading] = useState(true)   /* ici */
+  const [loading, setLoading] = useState(true) 
   const key = import.meta.env.VITE_API_KEY;
 
   const [video, setVideo] = useState([]);
@@ -23,18 +23,18 @@ function PopularVideosCard() {
     })
       .then((response) => response.json())
       .then((data) => {setVideo(data.items)
-    setLoading(false)});  /* ici */
+    setLoading(false)}); 
 
   }, [storage]);
   return (
     <div className="div__container">
       <div className="row">
-          {loading ? <Loader/>: video &&   /* ici */
+          {loading ? <Loader/>: video &&  
           video.map((item) => {
             const lecture = item.id;
             return (
               <div className="videos__emplacement">
-                <Link to={`/ParentsCardWatchVideo/${lecture}`}>
+                <Link to={`/PageOfVideoPlayback/${lecture}`}>
                   <img
                     className="img_logo"
                     src={item.snippet.thumbnails.medium.url}

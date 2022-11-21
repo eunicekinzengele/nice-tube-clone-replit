@@ -33,7 +33,7 @@ export default function SubscribedChannels() {
 
           return (
             <div className="videos__emplacement">
-              <Link to={`/ParentsCardChannelVideo/${channelId}`}>
+              <Link to={`/PageOfVideoSubscribed/${channelId}`}>
                 <img src={item?.snippet?.thumbnails?.medium?.url} alt="sub" />
               </Link>
               <p className="title__video">{item.snippet.title}</p>
