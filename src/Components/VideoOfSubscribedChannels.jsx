@@ -29,12 +29,12 @@ export default function VideoOfSubscribedChannels() {
           const channelId = item.id.videoId;
 
           return (
-            <div className="videos__emplacement">
               <Link to={`/PageOfVideoPlayback/${channelId}`}>
+            <div className="videos__emplacement">
                 <img  className="img_video" src={item?.snippet?.thumbnails?.default?.url} alt="sub" />
-              </Link>
               <p className="title__video">{item.snippet.title}</p>
             </div>
+              </Link>
           );
         })}
       </div>
