@@ -5,12 +5,12 @@
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  position: absolute;
   margin-left: 150px;
   display: flex;
   border-bottom: 2px solid rgb(136, 136, 143);
   border-left:2px solid rgb(136, 136, 143);
   border-right:2px solid rgb(136, 136, 143);
+  margin-top: -10px;
   position: fixed;
   z-index: 1;
 }
