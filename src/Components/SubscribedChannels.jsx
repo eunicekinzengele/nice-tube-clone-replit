@@ -32,12 +32,12 @@ export default function SubscribedChannels() {
           const channelId = item.snippet.resourceId.channelId;
 
           return (
-            <div className="videos__emplacement">
               <Link to={`/PageOfVideoSubscribed/${channelId}`}>
+            <div className="videos__emplacement">
                 <img src={item?.snippet?.thumbnails?.medium?.url} alt="sub" />
                 <p className="channel_name">{item.snippet.title}</p>
-              </Link>
             </div>
+              </Link>
           );
         })}
       </div>
