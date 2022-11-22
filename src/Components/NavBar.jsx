@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 function NavBar() { 
   return (
+    
     <div className="div__nav">
      <Link to= "/PageOfPopularVideo">
      <img className="img__logo" src={image} />
