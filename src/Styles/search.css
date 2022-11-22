@@ -4,15 +4,15 @@ form{
 
 .Place_filter {
   color: white;
-  margin-left: 20rem;
+  margin-left: 19rem;
   position: absolute;
   margin-top: 7rem;
   height: 30rem;
-  width: 37.5rem;
+  width: 70%;
 }
 .videos__emplacement {
   width: 12rem;
-  height: 13rem;
+  height: 11rem;
   background-color: #424242;
   display: block;
   overflow-y: hidden;
