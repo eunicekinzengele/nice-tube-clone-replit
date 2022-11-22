@@ -7,7 +7,7 @@ import { gapi, loadAuth2 } from "gapi-script";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { contexteUse } from "./Contextes/UseContexte";
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Login() {
   const navigate = useNavigate();
