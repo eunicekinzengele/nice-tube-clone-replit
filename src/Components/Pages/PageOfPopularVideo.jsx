@@ -7,7 +7,7 @@ export default function PageOfPopularVideo() {
   return (
     <div className="exemple">
       <NavBar />
-      <SideBar />
+      {/* <SideBar /> */}
       <PopularVideosCard />
     </div>
   );

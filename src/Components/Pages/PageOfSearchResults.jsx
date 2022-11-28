@@ -7,7 +7,7 @@ export default function PageOfSearchResults() {
   return (
     <div>
       <NavBar />
-      <SideBar />
+      {/* <SideBar /> */}
       <SearchResult />
     </div>
   );

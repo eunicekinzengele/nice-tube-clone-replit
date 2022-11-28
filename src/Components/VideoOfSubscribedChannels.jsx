@@ -1,14 +1,16 @@
 import "../Styles/videoofsbscribechannels.css";
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, NavLink, useParams } from "react-router-dom";
 import { contexteUse } from "./Contextes/UseContexte";
 import { useContext } from "react";
-import Loader from "./Loader";  /* ici */
+import Logout from "./Logout";
+import Loader from "./Loader";
 
 
 export default function VideoOfSubscribedChannels() {
-  const [loading, setLoading] = useState(true)   /* ici */
+  const [loading, setLoading] = useState(true);
   const [videos, setVideos] = useState([]);
+  const profil = localStorage.getItem("profilUser");
   const { channelId } = useParams();
   const { token } = useContext(contexteUse);
 
@@ -18,26 +20,90 @@ export default function VideoOfSubscribedChannels() {
   useEffect(() => {
     fetch(fetchData, { headers: { Authorization: "Bearer " + token } })
       .then((response) => response.json())
-      .then((data) => {setVideos(data.items)
-        setLoading(false)});
+      .then((data) => {
+        setVideos(data.items);
+        setLoading(false);
+      });
   }, [token]);
 
   return (
-    <div className="div_watch_sub">
-      <div className="row">
-        { loading ? <Loader/> : videos?.map((item) => {
-          const channelId = item.id.videoId;
+    <div class="container principal">
+      <div class="row">
+        <div class="container col-3 bg-danger height align-items-center">
+          <div className="col side_link align-items-center">
+            <NavLink
+              className={(nav) =>
+                nav.isActive ? "side_list_red" : "side_list "
+              }
+              to={"/PageOfPopularVideo"}
+            >
+              Accueil
+            </NavLink>
+          </div>
+          <div className="col side_link">
+            <NavLink
+              className={(nav) =>
+                nav.isActive ? "side_list_red" : "side_list "
+              }
+              to={"/PageOfSubscribedChannels"}
+            >
+              Abonnements
+            </NavLink>
+          </div>
+          <div className="img_buton">
+            <img className="profil_img" src={profil} />
+            <button className="btn btn_logout">
+              <Logout />
+            </button>
+          </div>
+        </div>
 
-          return (
-              <Link to={`/PageOfVideoPlayback/${channelId}`} className="card_link">
-            <div className="videos__emplacement">
-                <img  className="img_video" src={item?.snippet?.thumbnails?.default?.url} alt="sub" />
-              <p className="title__video">{item.snippet.title}</p>
+        <div class="container col-8 col-auto bg-danger cont-rigth">
+          <div className="container">
+            <div className="row_emplacement flex-wrap d-flex">
+              {loading ? (
+                <Loader />
+              ) : (
+                videos?.map((item) => {
+                  const channelId = item.id.videoId;
+
+                  return (
+                    <Link
+                      to={`/PageOfVideoPlayback/${channelId}`}
+                      className="card_link"
+                    >
+                      <div className="container videos__emplacement">
+                        <img
+                          className="img_video"
+                          src={item?.snippet?.thumbnails?.default?.url}
+                          alt="sub"
+                        />
+                        <p className="title__video">{item.snippet.title}</p>
+                      </div>
+                    </Link>
+                  );
+                })
+              )}
             </div>
-              </Link>
-          );
-        })}
+          </div>
+        </div>
       </div>
     </div>
+    // <div className="container text-center card_video">
+    //   <div className="row">
+    //     { loading ? <Loader/> : videos?.map((item) => {
+    //       const channelId = item.id.videoId;
+
+    //       return (
+    //           <Link to={`/PageOfVideoPlayback/${channelId}`} className="card_link">
+    //         <div className="container videos__emplacement">
+    //             <img  className="img_video" src={item?.snippet?.thumbnails?.default?.url} alt="sub" />
+    //           <p className="title__video">{item.snippet.title}</p>
+    //         </div>
+    //           </Link>
+    //       );
+    //     })}
+    //   </div>
+    // </div>
   );
 }

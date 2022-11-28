@@ -7,7 +7,7 @@ export default function PageOfVideoSubscribed() {
   return (
     <div>
       <NavBar />
-      <SideBar />
+      {/* <SideBar /> */}
       <VideoOfSubscribedChannels />
     </div>
   );

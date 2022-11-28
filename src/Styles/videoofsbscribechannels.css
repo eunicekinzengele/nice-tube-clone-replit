@@ -14,15 +14,17 @@
   padding-right: 2rem;
 }
 .videos__emplacement {
-  width: 12rem;
+  width: 11rem;
   height: 11rem;
   display: block;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   border-radius: 10px;
 }
 .img_video {
-  width: 240px;
-  height: 150px;
+  /* width: 220px;
+  height: auto; */
+  max-width: 100%;
+  /* max-height: 100%; */
 }
 .title__video {
   color: white;

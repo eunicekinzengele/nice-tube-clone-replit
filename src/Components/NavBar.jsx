@@ -3,18 +3,26 @@ import "../Styles/navbar.css";
 import image from "../Images/logo_NiceTube.png";
 import SearchInput from "./SearchInput";
 import { Link } from "react-router-dom";
+// import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 
 function NavBar() { 
   return (
-    
-    <div className="div__nav">
-     <Link to= "/PageOfPopularVideo">
-     <img className="img__logo" src={image} />
-     </Link>
+    <section className="header fixed-top container text-center bg-dark text-light">
+    <div className="row">
+        <Col className="logo_accueil" md={4}>
+          <Link to= "/PageOfPopularVideo">
+          <img className="img__logo" src={image} />
+          </Link>
+        </Col>
+        <Col>
+           <SearchInput />
+        </Col>
       <ul>
-        <SearchInput />
       </ul>
     </div>
+    </section>
   );
 }
 

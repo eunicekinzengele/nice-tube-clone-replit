@@ -6,36 +6,39 @@ import { useState } from "react";
 
 function SideBar() {
   const profil = localStorage.getItem("profilUser");
-  const[active, setActive] = useState();
+  const [active, setActive] = useState();
   return (
-    <div className="div__dashboard">
-      <div className="container_list">
-        <ul className="list__dashboard">       
-            <NavLink className={(nav)=>
-           nav.isActive ? 'side_list_red' : 'side_list '
-          }
-             to={"/PageOfPopularVideo"} >
-            {/* <li className="side_list"> */}
-              Acceueil
-            {/* </li> */}
+    <div className="container bg-dark div__dashboard" lg={4}>
+      <div className="container_list row align-item-center">
+        <ul className="list__dashboard">
+          <div className="lien_accueil">
+            <NavLink
+              className={(nav) =>
+                nav.isActive ? "side_list_red" : "side_list "
+              }
+              to={"/PageOfPopularVideo"}
+            >
+              Accueil
             </NavLink>
-          
-            <NavLink className={(nav)=>
-              nav.isActive ? 'side_list_red' : 'side_list '
-            }
-             to={"/PageOfSubscribedChannels"} >
-             {/* <li className="side_list"> */}
+          </div>
+          <div className="lien_abonnes">
+            <NavLink
+              className={(nav) =>
+                nav.isActive ? "side_list_red" : "side_list "
+              }
+              to={"/PageOfSubscribedChannels"}
+            >
               Abonnements
-              {/* </li> */}
             </NavLink>
+          </div>
+        </ul>
+        <ul className="img_buton">
           <li>
-            <li>
-              <img className="profil_img" src={profil} />
-            </li>
-            <button className="btn_logout">
-              <Logout />
-            </button>
+            <img className="profil_img" src={profil} />
           </li>
+          <button className="btn btn_logout">
+            <Logout />
+          </button>
         </ul>
       </div>
     </div>

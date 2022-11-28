@@ -9,7 +9,9 @@ export default function SearchInput() {
     setInputSearch(e.target.value);
   };
   return (
+    <div className="row input_buton">
     <form>
+      {/* <div className="col"> */}
       <input
         className="input__search"
         type="text"
@@ -17,11 +19,13 @@ export default function SearchInput() {
         onChange={handleChange}
         value={inputSearch}
       />
+      {/* </div> */}
       <Link className="" to={`/PageOfSearchResults${inputSearch}`}>
         <button className="button_search" type="submit">
           <BsSearch />
         </button>
       </Link>
     </form>
+    </div>
   );
 }

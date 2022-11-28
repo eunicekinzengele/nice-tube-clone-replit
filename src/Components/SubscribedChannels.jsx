@@ -1,16 +1,17 @@
 import React from "react";
 import "../Styles/subscribedchannels.css";
 import { useEffect, useState } from "react";
-import { Link} from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { contexteUse } from "./Contextes/UseContexte";
 import { useContext } from "react";
-import Loader from "./Loader";  /* ici */
-
+import Logout from "./Logout";
+import Loader from "./Loader"; 
 
 export default function SubscribedChannels() {
-  const [loading, setLoading] = useState(true)   /* ici */
+  const [loading, setLoading] = useState(true);
   const [videos, setVideos] = useState([]);
-  const {token} = useContext(contexteUse);
+  const profil = localStorage.getItem("profilUser");
+  const { token } = useContext(contexteUse);
   useEffect(() => {
     console.log(token);
     fetch(
@@ -21,26 +22,71 @@ export default function SubscribedChannels() {
       }
     )
       .then((response) => response.json())
-      .then((data) => {setVideos(data.items)
-      setLoading(false)});
+      .then((data) => {
+        setVideos(data.items);
+        setLoading(false);
+      });
   }, [token]);
 
   return (
-    <div className="container_subscribe">
-      <div className="row">
-        {loading? <Loader/>: videos?.map((item) => {
-          const channelId = item.snippet.resourceId.channelId;
+    <div class="container principal">
+      <div class="row">
+        <div class="container col-3 bg-danger height align-items-center">
+          <div className="col side_link align-items-center">
+            <NavLink
+              className={(nav) =>
+                nav.isActive ? "side_list_red" : "side_list "
+              }
+              to={"/PageOfPopularVideo"}
+            >
+              Accueil
+            </NavLink>
+          </div>
+          <div className="col side_link">
+            <NavLink
+              className={(nav) =>
+                nav.isActive ? "side_list_red" : "side_list "
+              }
+              to={"/PageOfSubscribedChannels"}
+            >
+              Abonnements
+            </NavLink>
+          </div>
+          <div className="img_buton">
+            <img className="profil_img" src={profil} />
+            <button className="btn btn_logout">
+              <Logout />
+            </button>
+          </div>
+        </div>
 
-          return (
-              <Link to={`/PageOfVideoSubscribed/${channelId}`}>
-            <div className="videos__emplacement">
-                <img src={item?.snippet?.thumbnails?.medium?.url} alt="sub" />
-                <p className="channel_name">{item.snippet.title}</p>
+        <div class="container col-8 col-auto bg-danger cont-rigth">
+          <div className="container">
+            <div className="row_emplacement flex-wrap d-flex">
+              {loading ? (
+                <Loader />
+              ) : (
+                videos?.map((item) => {
+                  const channelId = item.snippet.resourceId.channelId;
+
+                  return (
+                    <Link to={`/PageOfVideoSubscribed/${channelId}`}>
+                      <div className="videos__emplacement">
+                        <img
+                          src={item?.snippet?.thumbnails?.medium?.url}
+                          alt="sub"
+                        />
+                        <p className="channel_name">{item.snippet.title}</p>
+                      </div>
+                    </Link>
+                  );
+                })
+              )}
             </div>
-              </Link>
-          );
-        })}
+          </div>
+        </div>
       </div>
     </div>
+
   );
 }
