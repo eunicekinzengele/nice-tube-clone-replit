@@ -32,7 +32,7 @@ export default function SubscribedChannels() {
     <div class="container principal">
       <div class="row">
       <div className="container col-3 vh-100"></div>
-        <div class="container col-3 bg-danger vh-100 cont_left align-items-center">
+        <div class="container col-3 bg-dark card vh-100 cont_left align-items-center">
           <div className="side_link align-items-center">
             <NavLink
               className={(nav) =>
@@ -61,7 +61,7 @@ export default function SubscribedChannels() {
           </div>
         </div>
 
-        <div class="container col-8 col-auto bg-danger cont-rigth">
+        <div class="container col-8 col-auto bg-dark card cont-rigth">
           <div className="container">
             <div className="row_emplacement flex-wrap d-flex">
               {loading ? (

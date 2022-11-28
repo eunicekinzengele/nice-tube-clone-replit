@@ -9,7 +9,7 @@ import Col from 'react-bootstrap/Col';
 
 function NavBar() { 
   return (
-    <section className="header fixed-top container text-center bg-dark text-light">
+    <section className="header fixed-top container text-center text-light">
     <div className="row">
         <Col className="logo_accueil" md={4}>
           <Link to= "/PageOfPopularVideo">

@@ -31,37 +31,10 @@ function PopularVideosCard() {
   }, [storage]);
   console.log(video);
   return (
-    // <div className="container card_video">
-    //   <div className="row row_emplacement d-flex flex-wrap">
-    //     {loading ? (
-    //       <Loader />
-    //     ) : (
-    //       video &&
-    //       video.map((item) => {
-    //         const lecture = item.id;
-    //         return (
-    //           <Link
-    //             to={`/PageOfVideoPlayback/${lecture}`}
-    //             className="card_link"
-    //           >
-    //             <div className="videos__emplacement">
-    //               <img
-    //                 className="img_video"
-    //                 src={item.snippet.thumbnails.medium.url}
-    //               />
-    //               <p className="title__video">{item.snippet.title}</p>
-    //             </div>
-    //           </Link>
-    //         );
-    //       })
-    //     )}
-    //   </div>
-    // </div>
-
     <div className="container principal">
       <div className="row">
         <div className="container col-3 vh-100"></div>
-        <div class="container col-3 bg-danger vh-100 cont_left align-items-center">
+        <div class="container col-3 bg-dark card vh-100 cont_left align-items-center">
           <div className="side_link align-items-center">
             <NavLink
               className={(nav) =>
@@ -90,7 +63,7 @@ function PopularVideosCard() {
           </div>
         </div>
 
-        <div class="container col-8 col-auto bg-danger cont-rigth">
+        <div class="container col-8 col-auto bg-dark card cont-rigth">
           <div className="container">
             <div className="row_emplacement flex-wrap d-flex">
               {loading ? (

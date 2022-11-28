@@ -7,11 +7,21 @@ export default function SearchInput() {
   const [inputSearch, setInputSearch] = useState();
   const handleChange = (e) => {
     setInputSearch(e.target.value);
+
+    const filtered = !inputSearch === 0
+    ? null
+    :data.filter((item) =>
+        item.titre.toLowerCase().includes(inputSearch.toLowerCase())
+    );
+
+    // const filtered = search.length > 0
+    //     ? data.filter((item) =>
+    //         item.titre.toLowerCase().includes(search.toLowerCase())
+    //      ) : []
   };
   return (
     <div className="row input_buton">
     <form>
-      {/* <div className="col"> */}
       <input
         className="input__search"
         type="text"
@@ -19,7 +29,6 @@ export default function SearchInput() {
         onChange={handleChange}
         value={inputSearch}
       />
-      {/* </div> */}
       <Link className="" to={`/PageOfSearchResults${inputSearch}`}>
         <button className="button_search" type="submit">
           <BsSearch />

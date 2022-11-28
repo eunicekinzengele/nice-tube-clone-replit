@@ -7,7 +7,7 @@ export default function PageOfVideoPlayback() {
   return (
     <div>
       <NavBar />
-      <SideBar />
+      {/* <SideBar /> */}
       <VideoPlaybackCard />
     </div>
   );

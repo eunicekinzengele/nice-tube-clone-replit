@@ -27,8 +27,9 @@ export default function SearchResult() {
   return (
     <div class="container principal">
       <div class="row">
-        <div class="container col-3 bg-danger height align-items-center">
-          <div className="col side_link align-items-center">
+      <div className="container col-3 vh-100"></div>
+      <div class="container col-3 bg-dark card vh-100 cont_left align-items-center">
+          <div className="side_link align-items-center">
             <NavLink
               className={(nav) =>
                 nav.isActive ? "side_list_red" : "side_list "
@@ -38,7 +39,7 @@ export default function SearchResult() {
               Accueil
             </NavLink>
           </div>
-          <div className="col side_link">
+          <div className="side_link align-items-center">
             <NavLink
               className={(nav) =>
                 nav.isActive ? "side_list_red" : "side_list "
@@ -56,7 +57,7 @@ export default function SearchResult() {
           </div>
         </div>
 
-        <div class="container col-8 col-auto bg-danger cont-rigth">
+        <div class="container col-8 col-auto bg-dark card cont-rigth">
           <div className="container">
             <div className="row_emplacement flex-wrap d-flex">
               {videoFound?.map((item) => {
