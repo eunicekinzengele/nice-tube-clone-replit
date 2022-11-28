@@ -29,8 +29,9 @@ export default function VideoOfSubscribedChannels() {
   return (
     <div class="container principal">
       <div class="row">
-        <div class="container col-3 bg-danger height align-items-center">
-          <div className="col side_link align-items-center">
+      <div className="container col-3 vh-100"></div>
+        <div class="container col-3 bg-danger vh-100 cont_left align-items-center">
+          <div className="side_link align-items-center">
             <NavLink
               className={(nav) =>
                 nav.isActive ? "side_list_red" : "side_list "
@@ -40,7 +41,7 @@ export default function VideoOfSubscribedChannels() {
               Accueil
             </NavLink>
           </div>
-          <div className="col side_link">
+          <div className="side_link align-items-center">
             <NavLink
               className={(nav) =>
                 nav.isActive ? "side_list_red" : "side_list "
@@ -72,7 +73,7 @@ export default function VideoOfSubscribedChannels() {
                       to={`/PageOfVideoPlayback/${channelId}`}
                       className="card_link"
                     >
-                      <div className="container videos__emplacement">
+                      <div className="videos__emplacement">
                         <img
                           className="img_video"
                           src={item?.snippet?.thumbnails?.default?.url}
@@ -89,21 +90,6 @@ export default function VideoOfSubscribedChannels() {
         </div>
       </div>
     </div>
-    // <div className="container text-center card_video">
-    //   <div className="row">
-    //     { loading ? <Loader/> : videos?.map((item) => {
-    //       const channelId = item.id.videoId;
-
-    //       return (
-    //           <Link to={`/PageOfVideoPlayback/${channelId}`} className="card_link">
-    //         <div className="container videos__emplacement">
-    //             <img  className="img_video" src={item?.snippet?.thumbnails?.default?.url} alt="sub" />
-    //           <p className="title__video">{item.snippet.title}</p>
-    //         </div>
-    //           </Link>
-    //       );
-    //     })}
-    //   </div>
-    // </div>
+   
   );
 }

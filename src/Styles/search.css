@@ -9,15 +9,15 @@ form{
   margin-top: 7rem;
   height: 30rem;
   width: 70%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
-.videos__emplacement {
+/* .videos__emplacement {
   width: 12rem;
   height: 11rem;
   background-color: #424242;
   display: block;
-  overflow-y: hidden;
-}
+  /* overflow-y: hidden; */
+} */
 
 .title__video {
   color: white;

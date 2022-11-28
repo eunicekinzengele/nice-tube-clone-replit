@@ -31,8 +31,9 @@ export default function SubscribedChannels() {
   return (
     <div class="container principal">
       <div class="row">
-        <div class="container col-3 bg-danger height align-items-center">
-          <div className="col side_link align-items-center">
+      <div className="container col-3 vh-100"></div>
+        <div class="container col-3 bg-danger vh-100 cont_left align-items-center">
+          <div className="side_link align-items-center">
             <NavLink
               className={(nav) =>
                 nav.isActive ? "side_list_red" : "side_list "
@@ -42,7 +43,7 @@ export default function SubscribedChannels() {
               Accueil
             </NavLink>
           </div>
-          <div className="col side_link">
+          <div className="side_link align-items-center">
             <NavLink
               className={(nav) =>
                 nav.isActive ? "side_list_red" : "side_list "
@@ -70,9 +71,10 @@ export default function SubscribedChannels() {
                   const channelId = item.snippet.resourceId.channelId;
 
                   return (
-                    <Link to={`/PageOfVideoSubscribed/${channelId}`}>
+                    <Link className="card_link" to={`/PageOfVideoSubscribed/${channelId}`}>
                       <div className="videos__emplacement">
                         <img
+                          className="img_video"
                           src={item?.snippet?.thumbnails?.medium?.url}
                           alt="sub"
                         />

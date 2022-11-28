@@ -11,7 +11,36 @@
   height: 400px;
   position: fixed;
 }
-
+.side_list{
+  background-color: #424242;
+  padding: 10px;
+  border-radius: 20px;
+  height: 20px;
+  width: 70%;
+  /* margin-right:2rem; */
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  /* margin-left: 25px; */
+  }
+  .side_list_red{
+    background-color: #df1212;
+    padding: 10px;
+    border-radius: 20px;
+    height: 20px;
+    width: 70%;
+    /* margin-right:2rem; */
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    /* margin-left: 25px; */
+    }
+.side_list:hover {
+    background-color: black;
+      color: white;
+    }
 .side_link{
   /* width: 13rem; */
   margin-bottom: 5rem;
@@ -37,14 +66,35 @@
   column-gap: 15px;
   margin-top: 10px;
 }
-
+.profil_img{
+  /* width: 80%; */
+  height:70px;
+  border-radius: 50px;
+  /* margin-left: 0px; */
+  margin-right: px;
+}
+.btn_logout {
+  height: 50px;
+  margin-top: -5rem;
+  /* position: absolute; */
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  border: none;
+  width: 120px;
+  margin-top: 3rem;
+  /* margin-left: -1rem; */
+}
 .videos__emplacement{
   width: 12rem;
   height: 11rem;
   display: block;
-  border: 2px white solid;
+  /* border: 2px white solid; */
   border-radius: 10px;
   margin-bottom: 40px;
+  background-color: #424242;
   /* margin-top: -30px; */
 }
 .title__video{
