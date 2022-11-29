@@ -1,5 +1,4 @@
 import React from "react";
-import SideBar from "../SideBar";
 import SearchResult from "../SearchResult";
 import NavBar from "../NavBar";
 
