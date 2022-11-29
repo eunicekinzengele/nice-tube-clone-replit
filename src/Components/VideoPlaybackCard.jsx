@@ -63,7 +63,7 @@ export default function VideoPlaybackCard() {
           <div className="container">
             <div className="row_emplacement flex-wrap d-flex">
               <iframe
-                width="530"
+                width="520"
                 height="400"
                 src={`https://www.youtube.com/embed/${lecture}`}
                 title="YouTube video player"
@@ -75,6 +75,9 @@ export default function VideoPlaybackCard() {
                   <h3></h3>
                 </div>
             </div>
+          </div>
+          <div className="random_videos bg-">
+
           </div>
         </div>
       </div>
