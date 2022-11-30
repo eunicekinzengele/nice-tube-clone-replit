@@ -7,8 +7,30 @@
   height: 400px;
   width:650px ;
 }
+.card_playback{
+  max-width: 100%;
+}
+.title_video_playback{
+  background-color: red;
+  width: 300px;
+  height: 300px;
+}
 .watch {
   width: 30rem;
   height: 10rem;
 }
-
+.random_videos{
+  width: 13%;
+}
+.random_videos_emplacement{
+  width:100% ;
+  border-radius: 10px;
+  background-color: #424242;
+}
+.img_video_random{
+  max-width: 100%;
+}
+.title__video_random{
+  color: white;
+  font-size: 15px;
+}

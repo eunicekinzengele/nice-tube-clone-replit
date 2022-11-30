@@ -3,10 +3,11 @@ import { Routes, Route } from "react-router-dom";
 import { gapi, loadAuth2 } from "gapi-script";
 import Login from "./Components/Login";
 import PageOfPopularVideo from "./Components/Pages/PageOfPopularVideo";
-import PageOfSubscribedChannels from "./Components/Pages/PageOfSubscribedChannels"
-import PageOfVideoSubscribed from "./Components/Pages/PageOfVideoSubscribed"
-import PageOfSearchResults from "./Components/Pages/PageOfSearchResults"
-import PageOfVideoPlayback from "./Components/Pages/PageOfVideoPlayback"
+import PageOfSubscribedChannels from "./Components/Pages/PageOfSubscribedChannels";
+import PageOfVideoSubscribed from "./Components/Pages/PageOfVideoSubscribed";
+import PageOfSearchResults from "./Components/Pages/PageOfSearchResults";
+import PageOfVideoPlayback from "./Components/Pages/PageOfVideoPlayback";
+import PageOfProfil from "./Components/Pages/PageOfProfil";
 import { useEffect, useState } from "react";
 import { contexteUse } from "./Components/Contextes/UseContexte";
 import Loader from "./Components/Loader";
@@ -61,9 +62,10 @@ function App() {
             element={<PageOfSearchResults />}
           ></Route>
           <Route 
-            path="/loader" 
-            element={<Loader />}>
-          </Route>
+            path="/PageOfProfil" 
+            element={<PageOfProfil />}
+            ></Route>
+          <Route path="/loader" element={<Loader />}></Route>
         </Routes>
       </div>
     </contexteUse.Provider>
