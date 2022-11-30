@@ -1,13 +1,11 @@
 import React, { useEffect } from "react";
 import "../Styles/login.css";
 import Image from "../Images/logo_NiceTube.png";
-// import Image from 'react-bootstrap/Image';
 import { FcGoogle } from "react-icons/fc";
 import { gapi, loadAuth2 } from "gapi-script";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { contexteUse } from "./Contextes/UseContexte";
-// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Login() {
   const navigate = useNavigate();
@@ -63,19 +61,6 @@ function Login() {
       </button>
     </div>
 
-    // <div className="connexion_space">
-    //   {/* <button type="button" className="btn btn-primary">Primary</button> */}
-    //   <div className="general">
-    //     <img className="logo__connexion" src={Image} />
-    //     <p className="connexion_title">Sign in with</p>
-    //     <button
-    //       id="started"
-    //       className="button_login btn btn-danger d-block text-center"
-    //     >
-    //       <FcGoogle /> Google
-    //     </button>
-    //   </div>
-    // </div>
   );
 }
 export default Login;

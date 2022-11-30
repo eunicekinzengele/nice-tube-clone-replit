@@ -2,6 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Logout from "./Logout";
 import "../Styles/profil.css";
+import Image from "../Images/profil_picture.jpg";
+import Appareil from "../Images/appareil.png";
 
 export default function profil() {
   return (
@@ -40,9 +42,15 @@ export default function profil() {
 
           <div class="container col-8 col-auto card cont_profil">
             <div className="container">
-              <div className="row_emplacement flex-wrap d-flex align-items-center">
-                <div className="row profil_image">
-                  <h2>Modifiez votre profil</h2>
+              <div className="profil_page flex-wrap d-flex justify-content-center">
+                <div className="row profil_image justify-content-center">
+                  <h2 className="profil_title">Modifiez votre profil</h2>
+                  <div className="row img_and_icon d-flex flex-wrap">
+                    <img className="img_profil" src={Image}></img>
+                    <button className="button_appareil">
+                      <img className="appareil_photo" src={Appareil}></img>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
