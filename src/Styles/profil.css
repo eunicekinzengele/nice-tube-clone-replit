@@ -1,3 +1,9 @@
+.profil_page{
+    /* background-color: blue; */
+    flex-direction: column;
+    align-items: center;
+    height: 600Px;
+}
 .cont_profil{
     width: 73%;
     background-color: #E7E7E7;
@@ -19,14 +25,87 @@
 }
 .appareil_photo{
     max-width: 100%;
-    margin-left: 27%;
 }
 .button_appareil{
     align-items: center;
     justify-content: center;
     width: 70px;
+    border: none;
+    margin-top: 10px;
+    background-color: #E7E7E7;
 }
 .img_and_icon{
     text-align: center;
+    justify-content: center;
     width: 250px;
+}
+.div_profilname{
+    width: 570px;
+    height: 50px;
+    margin-top: 50px;
+    background-color: red;
+}
+.input_profil_name{
+    width: 500px;
+    height: 50px;
+    border: solid 1px #49A4B0;
+    font-style: italic;
+}
+.button_modifier{
+    width: 40px;
+    height: 50px;
+}
+.div_liens{
+    border: solid 2px black;
+    width: 90%;
+    height: 400px;
+    text-align: center;
+}
+.row_liens{
+    border: 1px solid #49A4B0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+    height: 300px;
+}
+.container_link{
+    margin-top: 17px;
+    width: 90%;
+    /* border: solid 2px black; */
+    height: 270px;
+
+}
+.lien_rx{
+    max-width: 100%;
+    height: 50px;
+    margin-top: 10px;
+}
+.inputfacebooklink{
+    width: 80%;
+    height: 50px;
+}
+.link{
+    width: 100%;
+    height: 50px;
+    border: solid 1px #49A4B0;
+    font-style: italic;
+
+}
+.buttons_annuler_modifier{
+    width: 100%;
+    height: 30px;
+    background-color: red;
+    text-align: right;
+    margin-top: 15px;
+}
+.modifier_annuler{
+    margin-left: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #1C19BB;
+    color: white;
+    width: 8rem;
+    height: 40px;
 }
