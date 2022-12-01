@@ -43,7 +43,7 @@ export default function profil() {
           <div class="container col-8 col-auto card cont_profil">
             <div className="container ">
               <div className="row profil_page flex-wrap d-flex justify-content-center">
-                <div className="row profil_image d-flex flex-wrap justify-content-center">
+                <div className="row profil_image d-flex flex-wrap ">
                   <h2 className="profil_title">Modifiez votre profil</h2>
                   <div className="row img_and_icon d-flex flex-wrap">
                     <img className="img_profil" src={Image}></img>
@@ -58,9 +58,9 @@ export default function profil() {
                     placeholder="Modifiez votre nom"
                     type="texte"
                   />
-                  <button className="button_modifier" type="submit">
-                    {/* <BsSearch /> */}
-                  </button>
+                  {/* <button className="button_modifier" type="submit">
+                    <BsSearch />
+                  </button> */}
                 </div>
               </div>
               <div className=" div_liens container text-align-center ">
