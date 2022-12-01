@@ -46,7 +46,9 @@ export default function profil() {
                 <div className="row profil_image d-flex flex-wrap ">
                   <h2 className="profil_title">Modifiez votre profil</h2>
                   <div className="row img_and_icon d-flex flex-wrap">
-                    <img className="img_profil" src={Image}></img>
+                    <Link to={`/PageOfProfil`}>
+                      <img className="img_profil" src={Image}></img>
+                    </Link>
                     <button className="button_appareil">
                       <img className="appareil_photo" src={Appareil}></img>
                     </button>
@@ -68,23 +70,38 @@ export default function profil() {
                 <div className="row row_liens flex-wrap d-flex">
                   <div className="container container_link">
                     <div className="col facebook lien_rx">
-                      <input className="link inputfacebooklink" placeholder="Ajoutez votre lien Facebook" type="texte" />
+                      <input
+                        className="link inputfacebooklink"
+                        placeholder="Ajoutez votre lien Facebook"
+                        type="texte"
+                      />
                     </div>
                     <div className="col instagram lien_rx">
-                      <input className="link" placeholder="Ajoutez votre lien Instagram" type="texte" />
+                      <input
+                        className="link"
+                        placeholder="Ajoutez votre lien Instagram"
+                        type="texte"
+                      />
                     </div>
                     <div className="col tiktok lien_rx">
-                      <input className="link" placeholder="Ajoutez votre lien Tiktok" type="texte" />
+                      <input
+                        className="link"
+                        placeholder="Ajoutez votre lien Tiktok"
+                        type="texte"
+                      />
                     </div>
                     <div className="col twitter lien_rx">
-                      <input className="link" placeholder="Ajoutez votre lien Twitter" type="texte" />
+                      <input
+                        className="link"
+                        placeholder="Ajoutez votre lien Twitter"
+                        type="texte"
+                      />
                     </div>
                   </div>
                 </div>
                 <div className="container buttons_annuler_modifier">
-                    <button className="col modifier_annuler">Modifier</button>
-                    <button className="col modifier_annuler">Annuler</button>
-
+                  <button className="col modifier_annuler">Modifier</button>
+                  <button className="col modifier_annuler">Annuler</button>
                 </div>
               </div>
             </div>

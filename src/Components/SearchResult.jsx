@@ -27,8 +27,8 @@ export default function SearchResult() {
   return (
     <div class="container principal">
       <div class="row">
-      <div className="container col-3 vh-100"></div>
-      <div class="container col-3 bg-dark card vh-100 cont_left align-items-center">
+        <div className="container col-3 vh-100"></div>
+        <div class="container col-3 bg-dark card vh-100 cont_left align-items-center">
           <div className="side_link align-items-center">
             <NavLink
               className={(nav) =>
@@ -50,7 +50,9 @@ export default function SearchResult() {
             </NavLink>
           </div>
           <div className="img_buton">
-            <img className="profil_img" src={profil} />
+            <Link to={`/PageOfProfil`}>
+              <img className="profil_img" src={profil} />
+            </Link>
             <button className="btn btn_logout">
               <Logout />
             </button>

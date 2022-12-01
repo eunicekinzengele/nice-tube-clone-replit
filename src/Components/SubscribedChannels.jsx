@@ -5,7 +5,7 @@ import { Link, NavLink } from "react-router-dom";
 import { contexteUse } from "./Contextes/UseContexte";
 import { useContext } from "react";
 import Logout from "./Logout";
-import Loader from "./Loader"; 
+import Loader from "./Loader";
 
 export default function SubscribedChannels() {
   const [loading, setLoading] = useState(true);
@@ -31,7 +31,7 @@ export default function SubscribedChannels() {
   return (
     <div class="container principal">
       <div class="row">
-      <div className="container col-3 vh-100"></div>
+        <div className="container col-3 vh-100"></div>
         <div class="container col-3 bg-dark card vh-100 cont_left align-items-center">
           <div className="side_link align-items-center">
             <NavLink
@@ -54,7 +54,9 @@ export default function SubscribedChannels() {
             </NavLink>
           </div>
           <div className="img_buton">
-            <img className="profil_img" src={profil} />
+            <Link to={`/PageOfProfil`}>
+              <img className="profil_img" src={profil} />
+            </Link>
             <button className="btn btn_logout">
               <Logout />
             </button>
@@ -71,7 +73,10 @@ export default function SubscribedChannels() {
                   const channelId = item.snippet.resourceId.channelId;
 
                   return (
-                    <Link className="card_link" to={`/PageOfVideoSubscribed/${channelId}`}>
+                    <Link
+                      className="card_link"
+                      to={`/PageOfVideoSubscribed/${channelId}`}
+                    >
                       <div className="videos__emplacement">
                         <img
                           className="img_video"
@@ -89,6 +94,5 @@ export default function SubscribedChannels() {
         </div>
       </div>
     </div>
-
   );
 }

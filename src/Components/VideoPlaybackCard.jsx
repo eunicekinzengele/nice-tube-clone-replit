@@ -55,7 +55,9 @@ export default function VideoPlaybackCard() {
             </NavLink>
           </div>
           <div className="img_buton">
-            <img className="profil_img" src={profil} />
+            <Link to={`/PageOfProfil`}>
+              <img className="profil_img" src={profil} />
+            </Link>
             <button className="btn btn_logout">
               <Logout />
             </button>
@@ -75,20 +77,6 @@ export default function VideoPlaybackCard() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>
-                {/* <div className="col bg-danger color-light">
-                  {video &&
-                    video.map((item) => {
-                      const lecture = item.id;
-                      return (
-                          <div className="random_videos_emplacement">
-                            <p className="title__video_random">
-                              {item.snippet.title}
-                            </p>
-                          </div>
-                      );
-                    })}
-                </div> */}
-                {/*  */}
               </div>
               <div className="col random_videos">
                 {video &&

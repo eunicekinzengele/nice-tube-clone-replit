@@ -56,7 +56,9 @@ function PopularVideosCard() {
             </NavLink>
           </div>
           <div className="img_buton">
-            <img className="profil_img" src={profil} />
+            <Link to={`/PageOfProfil`}>
+              <img className="profil_img" src={profil} />
+            </Link>
             <button className="btn btn_logout">
               <Logout />
             </button>

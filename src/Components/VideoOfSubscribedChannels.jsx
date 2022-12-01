@@ -6,7 +6,6 @@ import { useContext } from "react";
 import Logout from "./Logout";
 import Loader from "./Loader";
 
-
 export default function VideoOfSubscribedChannels() {
   const [loading, setLoading] = useState(true);
   const [videos, setVideos] = useState([]);
@@ -29,7 +28,7 @@ export default function VideoOfSubscribedChannels() {
   return (
     <div class="container principal">
       <div class="row">
-      <div className="container col-3 vh-100"></div>
+        <div className="container col-3 vh-100"></div>
         <div class="container col-3 bg-dark card vh-100 cont_left align-items-center">
           <div className="side_link align-items-center">
             <NavLink
@@ -52,7 +51,9 @@ export default function VideoOfSubscribedChannels() {
             </NavLink>
           </div>
           <div className="img_buton">
-            <img className="profil_img" src={profil} />
+            <Link to={`/PageOfProfil`}>
+              <img className="profil_img" src={profil} />
+            </Link>
             <button className="btn btn_logout">
               <Logout />
             </button>
@@ -90,6 +91,5 @@ export default function VideoOfSubscribedChannels() {
         </div>
       </div>
     </div>
-   
   );
 }
