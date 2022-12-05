@@ -112,3 +112,8 @@
     width: 8rem;
     height: 40px;
 }
+.modifier_annuler:hover{
+    background-color: white;
+    border: 1px solid #49A4B0;
+    color: #49A4B0;
+}

@@ -1,11 +1,12 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Logout from "./Logout";
 import "../Styles/profil.css";
 import Image from "../Images/profil_picture.jpg";
 import Appareil from "../Images/appareil.png";
 
 export default function profil() {
+  const profil = localStorage.getItem("profilUser");
   return (
     <div>
       <div className="container principal">
@@ -33,7 +34,9 @@ export default function profil() {
               </NavLink>
             </div>
             <div className="img_buton">
-              <img className="profil_img" src={profil} />
+              <Link to={`/PageOfProfil`}>
+                <img className="profil_img" src={profil} />
+              </Link>
               <button className="btn btn_logout">
                 <Logout />
               </button>
@@ -46,9 +49,9 @@ export default function profil() {
                 <div className="row profil_image d-flex flex-wrap ">
                   <h2 className="profil_title">Modifiez votre profil</h2>
                   <div className="row img_and_icon d-flex flex-wrap">
-                    <Link to={`/PageOfProfil`}>
-                      <img className="img_profil" src={Image}></img>
-                    </Link>
+                    {/* <Link to={`/PageOfProfil`}> */}
+                    <img className="img_profil" src={Image}></img>
+                    {/* </Link> */}
                     <button className="button_appareil">
                       <img className="appareil_photo" src={Appareil}></img>
                     </button>
