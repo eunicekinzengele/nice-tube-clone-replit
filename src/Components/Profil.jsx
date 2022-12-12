@@ -1,10 +1,11 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
-import Logout from "./Logout";
+// import { Link, NavLink } from "react-router-dom";
+// import Logout from "./Logout";
 import "../Styles/profil.css";
 import Image from "../Images/profil_picture.jpg";
 import Appareil from "../Images/appareil.png";
-import SocialNetworkLinks from "./SocialNetworkLinks";
+// import SocialNetworkLinks from "./SocialNetworkLinks";
+import Sidebar from "./Sidebar";
 
 export default function profil() {
   const profil = localStorage.getItem("profilUser");
@@ -14,7 +15,8 @@ export default function profil() {
         <div className="row">
           <div className="container col-3 vh-100"></div>
           <div class="container col-3 bg-dark card vh-100 cont_left align-items-center">
-            <div className="side_link align-items-center">
+          <Sidebar/>
+            {/* <div className="side_link align-items-center">
               <NavLink
                 className={(nav) =>
                   nav.isActive ? "side_list_red" : "side_list "
@@ -42,7 +44,7 @@ export default function profil() {
               <button className="btn btn_logout">
                 <Logout />
               </button>
-            </div>
+            </div> */}
           </div>
 
           <div class="container col-8 col-auto card cont_profil">
