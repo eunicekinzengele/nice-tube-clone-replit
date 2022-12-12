@@ -1,3 +1,12 @@
-.socialNetwork_links{
-    color: red;
+.socialNetwors_list{
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.facebook_link{
+}
+.socialNetworks{
+    background-color: #356;
+    list-style: none;
 }

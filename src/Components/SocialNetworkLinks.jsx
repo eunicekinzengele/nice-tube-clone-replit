@@ -4,7 +4,7 @@ import '../Styles/socialnetworklinks.css';
 export const SocialNetworkLinks = () => {
   return (
     <div className="container  socialNetworks">
-      <ul className=" text-align-center socialNetwors_list">
+      <ul className="socialNetwors_list">
         <li>
           <label className="socialNetwork_links facebook_link text-light">
             Facebook
