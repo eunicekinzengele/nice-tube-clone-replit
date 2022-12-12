@@ -4,6 +4,7 @@ import Logout from "./Logout";
 import "../Styles/profil.css";
 import Image from "../Images/profil_picture.jpg";
 import Appareil from "../Images/appareil.png";
+import SocialNetworkLinks from "./SocialNetworkLinks";
 
 export default function profil() {
   const profil = localStorage.getItem("profilUser");
@@ -37,6 +38,7 @@ export default function profil() {
               <Link to={`/PageOfProfil`}>
                 <img className="profil_img" src={profil} />
               </Link>
+              <SocialNetworkLinks/>
               <button className="btn btn_logout">
                 <Logout />
               </button>
