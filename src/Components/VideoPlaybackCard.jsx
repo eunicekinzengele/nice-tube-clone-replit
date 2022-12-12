@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import "../Styles/videoplayback.css";
 import { NavLink, Link, useParams } from "react-router-dom";
 import Logout from "./Logout";
+import Sidebar from "./Sidebar";
 
 export default function VideoPlaybackCard() {
   const { lecture } = useParams();
@@ -34,34 +35,7 @@ export default function VideoPlaybackCard() {
       <div className="row">
         <div className="container col-3 vh-100"></div>
         <div class="container col-3 bg-dark card vh-100 cont_left align-items-center">
-          <div className="side_link align-items-center">
-            <NavLink
-              className={(nav) =>
-                nav.isActive ? "side_list_red" : "side_list "
-              }
-              to={"/PageOfPopularVideo"}
-            >
-              Accueil
-            </NavLink>
-          </div>
-          <div className="side_link align-items-center">
-            <NavLink
-              className={(nav) =>
-                nav.isActive ? "side_list_red" : "side_list "
-              }
-              to={"/PageOfSubscribedChannels"}
-            >
-              Abonnements
-            </NavLink>
-          </div>
-          <div className="img_buton">
-            <Link to={`/PageOfProfil`}>
-              <img className="profil_img" src={profil} />
-            </Link>
-            <button className="btn btn_logout">
-              <Logout />
-            </button>
-          </div>
+        <Sidebar />
         </div>
 
         <div class="container col-8 col-auto bg-dark card cont-rigth">
