@@ -3,6 +3,7 @@ import "../Styles/search.css";
 import { useEffect, useState } from "react";
 import Logout from "./Logout";
 import { useParams, Link, NavLink } from "react-router-dom";
+import Sidebar from "./Sidebar";
 
 export default function SearchResult() {
   const { searchWord } = useParams();
@@ -29,34 +30,7 @@ export default function SearchResult() {
       <div class="row">
         <div className="container col-3 vh-100"></div>
         <div class="container col-3 bg-dark card vh-100 cont_left align-items-center">
-          <div className="side_link align-items-center">
-            <NavLink
-              className={(nav) =>
-                nav.isActive ? "side_list_red" : "side_list "
-              }
-              to={"/PageOfPopularVideo"}
-            >
-              Accueil
-            </NavLink>
-          </div>
-          <div className="side_link align-items-center">
-            <NavLink
-              className={(nav) =>
-                nav.isActive ? "side_list_red" : "side_list "
-              }
-              to={"/PageOfSubscribedChannels"}
-            >
-              Abonnements
-            </NavLink>
-          </div>
-          <div className="img_buton">
-            <Link to={`/PageOfProfil`}>
-              <img className="profil_img" src={profil} />
-            </Link>
-            <button className="btn btn_logout">
-              <Logout />
-            </button>
-          </div>
+        <Sidebar />
         </div>
 
         <div class="container col-8 col-auto bg-dark card cont-rigth">

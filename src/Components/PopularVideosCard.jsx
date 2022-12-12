@@ -3,6 +3,7 @@ import "../Styles/popularvideocard.css";
 import { NavLink, Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Logout from "./Logout";
+import Sidebar from "./Sidebar";
 import Loader from "./Loader";
 // import { Container } from "react-bootstrap";
 
