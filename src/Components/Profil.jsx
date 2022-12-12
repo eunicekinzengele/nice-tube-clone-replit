@@ -15,7 +15,7 @@ export default function profil() {
         <div className="row">
           <div className="container col-3 vh-100"></div>
           <div class="container col-3 bg-dark card vh-100 cont_left align-items-center">
-          <Sidebar/>
+            <Sidebar />
             {/* <div className="side_link align-items-center">
               <NavLink
                 className={(nav) =>

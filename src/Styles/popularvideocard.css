@@ -2,11 +2,9 @@
   margin-top: 6rem;
 }
 .cont_left{
-  /* height: 25rem; */
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  /* justify-content: center; */
   align-items: center;
   height: 400px;
   position: fixed;

@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink, Link } from 'react-router-dom';
 import SocialNetworkLinks from './SocialNetworkLinks';
 import Logout from './Logout';
+import "../Styles/sidebar.css"
 
 export const Sidebar = () => {
     const profil = localStorage.getItem("profilUser");
