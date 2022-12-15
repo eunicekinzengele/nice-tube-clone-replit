@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React, { useRef } from "react";
 // import { Link, NavLink } from "react-router-dom";
 // import Logout from "./Logout";
 import "../Styles/profil.css";
@@ -8,11 +8,11 @@ import Appareil from "../Images/appareil.png";
 import Sidebar from "./Sidebar";
 
 export default function profil() {
-    const ref = useRef();
-    const handleClick = (e) => {
-      ref.current.click()
-    }
-  
+  const ref = useRef();
+  const handleClick = (e) => {
+    ref.current.click();
+  };
+
   const profil = localStorage.getItem("profilUser");
   return (
     <div>
@@ -30,13 +30,41 @@ export default function profil() {
                   <h2 className="profil_title">Modifiez votre profil</h2>
                   <div className="row img_and_icon d-flex flex-wrap">
                     <img className="img_profil" src={Image}></img>
-                    <input type="file" id="test" name="file" onChange={handleClick}/> 
-                    <label htmlFor="test" className="button_appareil">
-                    <img ref={ref} type="file" htmlFor="test" className="appareil_photo" src={Appareil}></img>
+
+                    <input
+                    className="input_displayNone"
+                      type="file"
+                      id="test"
+                      name="file"
+                      onChange={handleClick}
+                    />
+
+                    <label
+                      htmlFor="test"
+                      onChange={handleClick}
+                      className="button_appareil"
+                    >
+                      <img
+                        ref={ref}
+                        type="file"
+                        htmlFor="test"
+                        id="test"
+                        name="file"
+                        className="appareil_photo"
+                        src={Appareil}
+                        onChange={handleClick}
+                      ></img>
                     </label>
-                    <button htmlFor="test" className="button_appareil">
-                      <img ref={ref} type="file" htmlFor="test" className="appareil_photo" src={Appareil}></img>
-                    </button>
+
+                    {/* <button htmlFor="test" className="button_appareil">
+                      <img
+                        ref={ref}
+                        type="file"
+                        htmlFor="test"
+                        className="appareil_photo"
+                        src={Appareil}
+                      ></img>
+                    </button> */}
                   </div>
                 </div>
                 <div className="div_profilname">

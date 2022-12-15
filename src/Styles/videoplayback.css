@@ -10,10 +10,110 @@
 .card_playback{
   max-width: 100%;
 }
-.title_video_playback{
-  background-color: red;
-  width: 300px;
-  height: 300px;
+.title_of_video_playing{
+  background-color: rgb(148, 107, 107);
+  width: 520px;
+  height: 50px;
+}
+.comment_subcomment_space{
+  width: 520px;
+  height: 100px;
+  margin-top: 2rem;
+}
+.img_comment{
+  width: 50px;
+  height: 50px;
+  border-radius: 60px;
+}
+.input_comment{
+  width: 20rem;
+  margin-left: 10px;
+  border: solid 2px;
+  border-top: none;
+  border-left:none;
+  border-right: none;
+  outline: 0;
+  border-color: #7B7575;
+  background-color: #212529;
+  color: white;
+  font-size: 18px;
+}
+.input_comment::placeholder{
+  font-style: italic;
+  color: rgb(167, 159, 159);
+  font-size: 20px;
+}
+.btn_submit_comment{
+  margin-left: 14rem;
+  border: none;
+  background-color: #7B7575;
+  color: white;
+  font-size: 15px;
+  border-radius: 20px;
+  padding: 7px;
+}
+.comments_posted_space{
+  width: 520px;
+  height: 200px;
+  margin-top: 50px;
+  color: white;
+}
+.name_author_comment{
+  margin-left: 20px;
+  font-size: 22px;
+}
+.comment{
+  width: 400px;
+  margin-left: 70px;
+}
+.like_dislike_answer{
+  /* background-color: blue; */
+  text-align: left;
+  margin-top: 5px;
+  margin-left: 40px;
+}
+.btn_react_comment{
+  margin-left: 20px;
+  border: none;
+  background-color: #212529;
+  color: white;
+}
+.btn_answer{
+  background-color:#7B7575;
+  font-size:15;
+  padding: 7px;
+  border-radius: 25px;
+}
+.sub_comment_and_reaction{
+  /* background-color: red; */
+  width: 410px;
+  height: 200px;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+.nomber_of_answer{
+  /* background-color: red; */
+  margin-left: 40px;
+  text-align: left;
+  border: none;
+}
+.btn_nbr_of_answer{
+  border: none;
+  margin-top: 20px;
+  padding: 7px;
+  background-color: #7B7575;
+  color: blue;
+  border-radius: 20px;
+}
+.sub_comment{
+  width: 400px;
+  margin-left: 70px;
+}
+.like_dislike_subcomment{
+  text-align: left;
+  margin-top: 5px; 
+  margin-left: 40px;
+ /* background-color: red; */
 }
 .watch {
   width: 30rem;
