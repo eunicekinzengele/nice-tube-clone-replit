@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 // import { Link, NavLink } from "react-router-dom";
 // import Logout from "./Logout";
 import "../Styles/profil.css";
@@ -8,6 +8,11 @@ import Appareil from "../Images/appareil.png";
 import Sidebar from "./Sidebar";
 
 export default function profil() {
+    const ref = useRef();
+    const handleClick = (e) => {
+      ref.current.click()
+    }
+  
   const profil = localStorage.getItem("profilUser");
   return (
     <div>
@@ -16,35 +21,6 @@ export default function profil() {
           <div className="container col-3 vh-100"></div>
           <div class="container col-3 bg-dark card vh-100 cont_left align-items-center">
             <Sidebar />
-            {/* <div className="side_link align-items-center">
-              <NavLink
-                className={(nav) =>
-                  nav.isActive ? "side_list_red" : "side_list "
-                }
-                to={"/PageOfPopularVideo"}
-              >
-                Accueil
-              </NavLink>
-            </div>
-            <div className="side_link align-items-center">
-              <NavLink
-                className={(nav) =>
-                  nav.isActive ? "side_list_red" : "side_list "
-                }
-                to={"/PageOfSubscribedChannels"}
-              >
-                Abonnements
-              </NavLink>
-            </div>
-            <div className="img_buton">
-              <Link to={`/PageOfProfil`}>
-                <img className="profil_img" src={profil} />
-              </Link>
-              <SocialNetworkLinks/>
-              <button className="btn btn_logout">
-                <Logout />
-              </button>
-            </div> */}
           </div>
 
           <div class="container col-8 col-auto card cont_profil">
@@ -53,11 +29,13 @@ export default function profil() {
                 <div className="row profil_image d-flex flex-wrap ">
                   <h2 className="profil_title">Modifiez votre profil</h2>
                   <div className="row img_and_icon d-flex flex-wrap">
-                    {/* <Link to={`/PageOfProfil`}> */}
                     <img className="img_profil" src={Image}></img>
-                    {/* </Link> */}
-                    <button className="button_appareil">
-                      <img className="appareil_photo" src={Appareil}></img>
+                    <input type="file" id="test" name="file" onChange={handleClick}/> 
+                    <label htmlFor="test" className="button_appareil">
+                    <img ref={ref} type="file" htmlFor="test" className="appareil_photo" src={Appareil}></img>
+                    </label>
+                    <button htmlFor="test" className="button_appareil">
+                      <img ref={ref} type="file" htmlFor="test" className="appareil_photo" src={Appareil}></img>
                     </button>
                   </div>
                 </div>

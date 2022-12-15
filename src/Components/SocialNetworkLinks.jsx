@@ -1,9 +1,13 @@
 import React from "react";
-import '../Styles/socialnetworklinks.css';
+import "../Styles/socialnetworklinks.css";
 
 export const SocialNetworkLinks = () => {
+  
   return (
-    <div className="container  socialNetworks">
+    <div className="container socialNetworks">
+      <div className="div_profil_name">
+        <label className="nom_complet text-light">Nom</label>
+      </div>
       <ul className="socialNetwors_list">
         <li>
           <label className="socialNetwork_links facebook_link text-light">

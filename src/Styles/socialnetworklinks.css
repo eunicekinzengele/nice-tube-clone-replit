@@ -3,8 +3,23 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    list-style: none;
+    font-size: 15px;
 }
 .facebook_link{
+    display: none;
+}
+.instagram_link{
+    display: none;
+}
+.tiktok_link{
+    display: none;
+}
+.twitter_link{
+    display: none;
+}
+.div_profil_name{
+    text-align: center;
 }
 .socialNetworks{
     background-color: #356;
