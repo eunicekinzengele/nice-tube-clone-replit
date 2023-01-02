@@ -2,9 +2,9 @@ const mongoose = require ('mongoose');
 
 const commentSchema=mongoose.Schema(
     {
-        commentaire: string,
-        videoid: String,
-        userid: string
+        commentaire: {type: String, required : true},
+        videoid: {type: String, required : true},
+        userid: {type: String, required : true},
     }
 )
 
