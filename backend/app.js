@@ -1,6 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose');
-const Comment = require('./models/Comment');
+const Comment = require('./models/CommentModel');
 
 mongoose.connect('mongodb+srv://eunice:mongo-password@cluster0.vd5slx3.mongodb.net/?retryWrites=true&w=majority',
   { useNewUrlParser: true,
@@ -10,10 +10,7 @@ mongoose.connect('mongodb+srv://eunice:mongo-password@cluster0.vd5slx3.mongodb.n
 
 const app = express()
 
-const newa={
-  nom: "eunice" ,
-  postnom: "sophia"
-};
+
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/newa', (req, res) => {
   res.send('hello world')
