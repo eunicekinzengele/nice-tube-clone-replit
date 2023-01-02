@@ -12,3 +12,8 @@ exports.createAComment = (req, res, next) => {
     .catch((error) => res.status(400).json({ error }));
 };
 
+exports.findAComment = (req, res, next) => {
+  Comment.find()
+    .then(() => res.status(201).json({ message: "comments found" }))
+    .catch((error) => res.status(400).json({ error}));
+};
