@@ -5,7 +5,9 @@ import { NavLink, Link, useParams } from "react-router-dom";
 import Logout from "./Logout";
 import Sidebar from "./Sidebar";
 import Image from "../Images/profil_picture2.jpg";
+import Comment from "./Comment";
 import { FcLike, FcDislike } from "react-icons/fc";
+
 
 export default function VideoPlaybackCard() {
   const { lecture } = useParams();
@@ -74,7 +76,8 @@ export default function VideoPlaybackCard() {
                   {/* );
                     })} */}
                 </div>
-                <div className="comment_subcomment_space">
+                <Comment/>
+                {/* <div className="comment_subcomment_space">
                   <div className="comment_space">
                     <img className=" img_comment" src={Image} />
                     <input
@@ -136,7 +139,7 @@ export default function VideoPlaybackCard() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
 
               <div className="col random_videos">
