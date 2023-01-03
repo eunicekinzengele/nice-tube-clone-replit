@@ -1,22 +1,78 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import Image from "../Images/profil_picture2.jpg";
+import InputComment from "./InputComment";
 import { FcLike, FcDislike } from "react-icons/fc";
 
+function Comment(currentUserId) {
+  const [Comments, setComments] = useState();
+  // const [activeComment, setActiveComment] = useState(null);
+  // const [userData, setUserData] = useState([]);
 
-function Comment() {
+  // const rootComments = backendComments
+  //   .filter((backendComment) => backendComment.parentComment === null)
+  //   .sort(
+  //     (a, b) =>
+  //       new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+  //   );
+
+  // const getReplies = (commentId) => {
+  //   return backendComments
+  //     .filter((backendComment) => backendComment.parentComment === commentId)
+  //     .sort(
+  //       (a, b) =>
+  //         new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+  //     );
+  // };
+
+  // const addComment = (text, parentComment) => {
+  //   console.log("addComment", text, parentComment);
+  //   axios
+  //     .post("http://localhost:8100/api/comment", {
+  //       message: text,
+  //       videoId: "1980431",
+  //       userId: localStorage.getItem("userId"),
+  //       parentComment: parentComment,
+  //     })
+  //     .then((comment) => {
+  //       setBackendComments([comment, ...backendComments]);
+  //     });
+  //   setActiveComment(null);
+  // };
+
+  // const fecthData = `http://localhost:3000/comment`;
+  // const fetchUser = "http://localhost:8100/api/user/";
+
+  // useEffect(() => {
+  //   fetch(fecthData, {
+  //     method: "post",
+  //     headers: {
+  //       "Content-Type": "application/json", 
+  //   // 'Content-Type': 'application/x-www-form-urlencoded',
+  //       },
+  //     body: JSON.stringify({ commentaire: Comments, videoId }),
+  //   })
+  //   })
+      
+      // .then((res) => res.json())
+      // .then((data) => setComments(data));
+
+  //   fetch(fetchUser, {
+  //     method: "GET",
+  //   })
+  //     .then((res) => res.json())
+  //     .then((data) => setUserData(data));
+  // }, []);
+
+  console.log("Commentaire : ", setComments);
+  // console.log("Backend Users : ", userData);
+
   return (
+    
     <div className="comment_subcomment_space">
       <div className="comment_space">
         <img className=" img_comment" src={Image} />
-        <input
-          className="input_comment"
-          placeholder="laissez un commentaire"
-          type="texte"
-        />
-        <button className="btn_submit_comment" type="submit">
-          Ajouter un commentaire
-        </button>
+        <InputComment submitLabel="Send Comment" handleSubmit={addComment}/>
       </div>
       <div className="comments_posted_space">
         <img className=" img_comment" src={Image} />

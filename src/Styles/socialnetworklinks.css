@@ -6,22 +6,29 @@
     list-style: none;
     font-size: 15px;
 }
+.socialNetwork_links{
+    margin-top: 5px;
+    width: 150px;
+    color: red;
+}
 .facebook_link{
-    display: none;
+    /* display: none; */
 }
 .instagram_link{
-    display: none;
+    /* display: none; */
 }
 .tiktok_link{
-    display: none;
+    /* display: none; */
 }
 .twitter_link{
-    display: none;
+    /* display: none; */
 }
 .div_profil_name{
     text-align: center;
+    color: black;
 }
 .socialNetworks{
     background-color: #356;
     list-style: none;
+
 }

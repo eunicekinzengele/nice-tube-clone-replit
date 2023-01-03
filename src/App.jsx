@@ -11,6 +11,8 @@ import PageOfProfil from "./Components/Pages/PageOfProfil";
 import { useEffect, useState } from "react";
 import { contexteUse } from "./Components/Contextes/UseContexte";
 import Loader from "./Components/Loader";
+import socketIO from "socket.io-client";
+const socket = socketIO.connect("http://localhost:3000")
 // import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {

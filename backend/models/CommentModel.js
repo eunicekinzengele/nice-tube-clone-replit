@@ -1,15 +1,38 @@
 const mongoose = require ('mongoose');
 
+const likesModelSchema = mongoose.Schema({
+    numberLikes: { type: String, require: true },
+  });
+  const dislikesModelSchema = mongoose.Schema({
+    numbersDislikes: { type: Number, require: true },
+  });
+  const subCommentModelSchema = mongoose.Schema(
+    {
+      commentaire: { type: String, require: true },
+      userId: { type: String, require: true },
+      likes: [likesModelSchema],
+      dislikes: [dislikesModelSchema],
+    },
+    {
+      timestamps: true,
+    }
+  );
+
+
 const commentModelSchema=mongoose.Schema(
     {
         commentaire: {type: String, required : true},
         videoid: {type: String, required : true},
         userid: {type: String, required : true},
-        parentComment: { type: String, default: null },
+        subCommentModelSchema:  [subCommentModelSchema],
+        likesModelSchema: [likesModelSchema],
+        dislikesModelSchema: [dislikesModelSchema]
     },
     {
         commentedTime: true
     }
 );
+
+
 
 module.exports= mongoose.model('Comment', commentModelSchema);

@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import SocialNetworkLinks from "./SocialNetworkLinks";
 import Logout from "./Logout";
+import Profil from "./Profil";
 import "../Styles/sidebar.css";
 
 export const Sidebar = () => {
@@ -33,7 +34,7 @@ export const Sidebar = () => {
         <Link to={`/PageOfProfil`}>
           <img className="profil_img" src={profil} />
         </Link>
-        <SocialNetworkLinks />
+        <Profil/>
         <button className="btn btn_logout">
           <Logout />
         </button>
