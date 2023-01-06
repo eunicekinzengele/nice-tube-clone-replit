@@ -31,11 +31,11 @@ console.log("commentaire", comment);
             </button>
           </div>
         </div>
-        <div className="nomber_of_answer">
+        {/* <div className="nomber_of_answer">
           <button className="btn_nbr_of_answer">4 réponses</button>
-        </div>
+        </div> */}
 
-        <div className="sub_comment_and_reaction">
+        {/* <div className="sub_comment_and_reaction">
           <img className=" img_comment" src={Image} />
           <span className="name_author_comment">Eunice kinzengele</span>
           <div className="sub_comment">J'aime aussi ça</div>
@@ -51,7 +51,7 @@ console.log("commentaire", comment);
               Répondre
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
