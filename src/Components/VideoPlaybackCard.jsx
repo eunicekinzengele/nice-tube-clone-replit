@@ -5,11 +5,12 @@ import { NavLink, Link, useParams } from "react-router-dom";
 import Logout from "./Logout";
 import Sidebar from "./Sidebar";
 import Image from "../Images/profil_picture2.jpg";
-import Comment from "./Comment";
+import ParentComment from "./ParentComment";
+import Comment from "./ParentComment";
 import { FcLike, FcDislike } from "react-icons/fc";
 
 
-export default function VideoPlaybackCard() {
+export default function VideoPlaybackCard({socket}) {
   const { lecture } = useParams();
   const key = import.meta.env.VITE_API_KEY;
   const [video, setVideo] = useState([]);
@@ -76,7 +77,7 @@ export default function VideoPlaybackCard() {
                   {/* );
                     })} */}
                 </div>
-                <Comment/>
+                <ParentComment videoId ={lecture} socket= {socket}/>
                 {/* <div className="comment_subcomment_space">
                   <div className="comment_space">
                     <img className=" img_comment" src={Image} />

@@ -22,8 +22,8 @@ const likesModelSchema = mongoose.Schema({
 const commentModelSchema=mongoose.Schema(
     {
         commentaire: {type: String, required : true},
-        videoid: {type: String, required : true},
-        userid: {type: String, required : true},
+        videoId: {type: String, required : true},
+        userId: {type: String, required : true},
         subCommentModelSchema:  [subCommentModelSchema],
         likesModelSchema: [likesModelSchema],
         dislikesModelSchema: [dislikesModelSchema]

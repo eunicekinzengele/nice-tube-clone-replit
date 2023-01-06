@@ -5,6 +5,8 @@ const http = require("http").Server(app);
 const { json } = require("react-router-dom");
 const cors = require("cors");
 const Commentroutes = require("./routes/commentRoute");
+const action = require('./action/Action');
+const { error } = require("console");
 const socketIO = require("socket.io")(http, {
   cors: {
     origin: "http://localhost:5173",
@@ -36,6 +38,18 @@ app.use(express.json());
 app.use(cors());
 socketIO.on("connection", (socket) => {
   console.log(`⚡: ${socket.id} user just connected!`);
+  socket.on("comment-send", (data) =>{
+    action.createAComment(
+      data,
+      (data) => {
+        console.log("data", data);
+        socketIO.emit("comment-send", data);
+      },
+      (error) => {console.log(error);}
+    );
+  });
+
+
   socket.on("disconnect", () => {
     console.log("🔥: A user disconnected");
   });

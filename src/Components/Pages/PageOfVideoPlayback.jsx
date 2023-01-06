@@ -2,12 +2,12 @@ import React from "react";
 import NavBar from "../NavBar";
 import VideoPlaybackCard from "../VideoPlaybackCard";
 
-export default function PageOfVideoPlayback() {
+export default function PageOfVideoPlayback({socket}) {
   return (
     <div>
       <NavBar />
       {/* <SideBar /> */}
-      <VideoPlaybackCard />
+      <VideoPlaybackCard socket={socket} />
     </div>
   );
 }

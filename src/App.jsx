@@ -49,7 +49,7 @@ function App() {
           ></Route>
           <Route
             path="/PageOfVideoPlayback/:lecture"
-            element={<PageOfVideoPlayback />}
+            element={<PageOfVideoPlayback socket={socket}/>}
           />
           <Route
             path="/PageOfSubscribedChannels"
