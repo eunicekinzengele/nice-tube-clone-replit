@@ -14,10 +14,41 @@ Je l'ai gardé en ligne sur github sous le [lien]("https://github.com/eunicekinz
 
 J'ai caché mes différentes clés valeurs dans les variables d'environnement
 
-Quelques dependances installées :
-   -react-google-login
+Quelques dependances installées coté frontend :
+   - react-google-login
    - react-icons
    - react-router-dom
+   - bootstrap
+   - react-bootstrap
+   - socket.io-client
+   - cors
+
+Dans le projet il y a le dossier "backend" qui gère toute la partie backend
+
+- L'initialiser avec la commande 
+    ```
+    npm init
+    ```
+Quelques dependances installées coté backend :
+    - express
+    - mongoose
+    - nodemon
+    - socket.io
+
+
+- Pour installer tous les packages venu avec le projet, taper la commande
+    ```
+    npm install
+    ```
+
+- Lancer le backend avec la commande 
+    ```
+    npm start
+    ```
+- Lancer le frontend avec la commande
+    ```
+    npm run dev
+    ```
 
 
 
@@ -27,21 +58,4 @@ Quelques dependances installées :
 
 
 
-<!-- 
-## Running React on Repl.it
 
-[React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.
-
-[Vite](https://vitejs.dev/) is a blazing fast frontend build tool that includes features like Hot Module Reloading (HMR), optimized builds, and TypeScript support out of the box.
-
-Using the two in conjunction is one of the fastest ways to build a web app.
-
-### Getting Started
-- Hit run
-- Edit [App.jsx](#src/App.jsx) and watch it live update!
-
-By default, Replit runs the `dev` script, but you can configure it by changing the `run` field in the [configuration file](#.replit). Here are the vite docs for [serving production websites](https://vitejs.dev/guide/build.html)
-
-### Typescript
-
-Just rename any file from `.jsx` to `.tsx`. You can also try our [TypeScript Template](https://replit.com/@replit/React-TypeScript) -->
