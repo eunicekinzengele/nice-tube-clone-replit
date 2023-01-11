@@ -9,7 +9,6 @@ function Comment({comment, socket}) {
 console.log("commentaire", comment);
 
 
-
   return (
     <div className="comment_subcomment_space">
       
