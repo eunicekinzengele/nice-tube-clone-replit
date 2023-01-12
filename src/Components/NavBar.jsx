@@ -11,7 +11,7 @@ function NavBar() {
   return (
     <section className="header fixed-top container text-center text-light">
     <div className="row">
-        <Col className="logo_accueil" md={4}>
+        <Col className="logo_accueil">
           <Link to= "/PageOfPopularVideo">
           <img className="img__logo" src={image} />
           </Link>

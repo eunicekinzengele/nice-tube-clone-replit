@@ -9,16 +9,7 @@ form{
   margin-top: 7rem;
   height: 30rem;
   width: 70%;
-  /* border: 2px solid red; */
 }
-/* .videos__emplacement {
-  width: 12rem;
-  height: 11rem;
-  background-color: #424242;
-  display: block;
-  /* overflow-y: hidden; */
-} */
-
 .title__video {
   color: white;
   margin-right: 30px;
@@ -50,4 +41,22 @@ form{
   /* margin-top: 10px; */
   /* cursor: pointer; */
   /* left: 42rem; */
+}
+
+
+@media only screen and (max-width: 600px) {
+    .input__search{
+      width: 200px;
+      height: 30px;
+      margin-left: -2rem;
+    }
+    .button_search {
+      /* background-color: white; */
+      height: 30px;
+      width: 35px;
+      margin-top: 10px;
+      /* position: absolute; */
+      /* border: none; */
+     
+    }
 }
