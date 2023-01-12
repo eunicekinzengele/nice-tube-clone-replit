@@ -53,7 +53,7 @@ function Login() {
     console.log(user);
   };
   return (
-    <div className="container-fluid bg-light essaie">
+    <div className="container-fluid essaie">
       <img src={Image} className="img-fluid logo-connexion" alt="logo"/>
       <p className="text-center connexion_title">Sign in with</p>
       <button id="started" className="button_login btn btn-dark btn-center btn-primary btn-lg text-white btn-outline-dark d-block text-center">

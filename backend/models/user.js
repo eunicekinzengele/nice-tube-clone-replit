@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 
 const userSchema = mongoose.Schema({
-  name: { type: String, required: true },
   imageUrl: { type: String, required: true },
+  name: { type: String, required: true },
   facebook: {
     type: String,
     default: "https://m.facebook.com/eunice.kinzengele?eav=AfZmLe7xDlTGNourRXRvSyRYzLjLv0YXsVa2195Fd_Nq8F24yOgmcrZWNx7waDT12ao&paipv=0",

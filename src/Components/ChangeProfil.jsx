@@ -1,36 +1,42 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, NavLink, useParams } from "react-router-dom";
 // import Logout from "./Logout";
+import image from "../Images/profil_picture.jpg";
 import "../Styles/profil.css";
 import Appareil from "../Images/appareil.png";
 // import SocialNetworkLinks from "./SocialNetworkLinks";
 import Sidebar from "./Sidebar";
+import axios from "axios";
 
 export default function ChangeProfil() {
   const { userId } = useParams();
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [imageUrl, setImageUrl] = useState(null);
   const [user, setUser] = useState({
-    name: "",
     imageUrl: "",
+    name: "",
     email: "",
     tiktok: "",
     linkedin: "",
   });
+  // const [name, setName] = useState();
+  // const [email, setEmail] = useState();
+  // const [tiktok, setTiktok] = useState();
+  // const [linkedin, setLinkedin] = useState();
 
-  const [selectedImage, setSelectedImage] = useState(null);
-  const [imageUrl, setImageUrl] = useState(null);
 
-  const fetchData = `http://localhost:8100/api/user/${userId}`;
+  const fetchData = `http://localhost:3000/users/${userId}`;
   const accessToken = localStorage.getItem("token");
   const ref = useRef();
   const handleClick = (e) => {
-    ref.current.click();
+    ref.current.click(e);
   };
 
   const handleSubmit = () => {
     axios
-      .put(`http://localhost:8100/api/user/${userId}`, {
-        name: user.name,
+      .put(`http://localhost:3000/users/${userId}`, {
         imageUrl: user.imageUrl,
+        name: user.name,
         email: user.email,
         tiktok: user.tiktok,
         linkedin: user.linkedin,
@@ -86,13 +92,15 @@ export default function ChangeProfil() {
                   <div className="row img_and_icon d-flex flex-wrap">
                     {imageUrl && selectedImage ? (
                       <img
-                        src={imageUrl}
+                        src={image}
+                        // src={imageUrl}
                         alt={selectedImage.name}
                         className="img_profil"
                       />
                     ) : (
                       <img
-                        src={user.imageUrl}
+                        src={image}
+                        // src={user.imageUrl}
                         alt="profile-picture"
                         className="img_profil"
                       />
@@ -124,6 +132,7 @@ export default function ChangeProfil() {
                         onChange={handleClick}
                       ></img>
                     </label>
+                  <div className="profil_name">Eunice &nbsp; Kinzengele</div>
                   </div>
                 </div>
                 <div className="div_profilname">
