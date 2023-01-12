@@ -88,6 +88,7 @@ body {
   body {
     background-color: lightblue;
     flex-direction: column;
+    display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -96,7 +97,7 @@ body {
     background-color: white;
     width: 70%;
     border-radius: 10px;
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
   }
   .logo-connexion {
     height: 90px;
