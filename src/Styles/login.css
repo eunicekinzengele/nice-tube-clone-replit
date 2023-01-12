@@ -91,8 +91,17 @@ body {
 
   }
   .essaie{
-    background-color:red;
+    background-color: white;
     width: 70%;
+    border-radius: 10px;
+  }
+  .logo-connexion{
+    height: 90px;
+    width: 170px;
+    margin-top: -2rem;
+  }
+  .connexion_title{
+    font-size: 15px;
   }
 
 }
