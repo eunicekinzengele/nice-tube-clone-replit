@@ -45,13 +45,17 @@ form{
 
 @media only screen and (max-width: 600px) {
     .input__search{
-      width: 160px;
+      width: 150px;
       height: 30px;
       margin-left: -2rem;
+      /* display: none; */
     }
     .button_search {
       height: 30px;
       width: 30px;
       margin-top: 10px;
+     margin-left: -10rem;
+     margin-top: 1rem;
+     display: none;
     }
 }
