@@ -3,7 +3,7 @@ body {
   /* background-size: 400% 400%;
   height: 100vh; */
 }
-.essaie{
+.essaie {
   width: 30%;
   height: 350px;
   border: 1px solid white;
@@ -15,20 +15,20 @@ body {
   margin-top: 5rem;
   background-color: white;
 }
-.logo-connexion{
+.logo-connexion {
   height: 100px;
   width: 180px;
   margin-top: -2rem;
 }
-.connexion_title{
+.connexion_title {
   font-size: 25px;
 }
-.button_login{
+.button_login {
   /* width: 250px; */
   height: px;
   margin-top: 2rem;
 }
-.button_login :hover{
+.button_login :hover {
   background-color: white;
 }
 /* .general {
@@ -84,24 +84,26 @@ body {
   border: 1px solid black;
 } */
 
-
 @media only screen and (max-width: 600px) {
   body {
     background-color: lightblue;
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
   }
-  .essaie{
+  .essaie {
     background-color: white;
     width: 70%;
     border-radius: 10px;
+    margin-top: 5rem;
   }
-  .logo-connexion{
+  .logo-connexion {
     height: 90px;
     width: 170px;
     margin-top: -2rem;
   }
-  .connexion_title{
+  .connexion_title {
     font-size: 15px;
   }
-
 }
