@@ -7,13 +7,17 @@
   border-right: 1px solid #7b7575;
   /* position: fixed; */
 }
-.img__logo {
-  width: 150px;
-  height: 80px;
-  margin-left: -5rem;
-  /* left: -rem; */
+.profil_img_nav{
+  display: none;
 }
-.invisible {
+  .img__logo {
+    width: 150px;
+    height: 80px;
+    margin-left: -5rem;
+    /* left: -rem; */
+  }
+
+  .invisible {
   display: none;
 }
 .liste_nav {
