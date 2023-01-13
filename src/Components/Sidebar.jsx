@@ -9,7 +9,7 @@ export const Sidebar = () => {
   const profil = localStorage.getItem("profilUser");
 
   return (
-    <div>
+    <div className="sideBar">
       {/* <div className="container col-3 vh-100"></div> */}
       {/* <div className="container col-3 bg-dark card vh-100 cont_left align-items-center"> */}
       <div className="essaye">
