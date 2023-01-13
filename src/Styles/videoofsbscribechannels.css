@@ -30,3 +30,15 @@
   margin: auto;
   text-decoration: none;
 }
+
+
+@media screen and (max-width: 600px) {
+  .videos__emplacement{
+    width: 17.5rem;
+    height: 13rem;
+  }
+  .img_video {
+    max-width: 100%;
+    height: 10rem;
+  }
+}
