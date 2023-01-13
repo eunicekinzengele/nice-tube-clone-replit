@@ -41,6 +41,7 @@
     width: 110px;
     height: 60px;
     margin-top: 10px;
+    display: none;
   }
   .profil_img_nav {
     width: 50px;
@@ -48,3 +49,5 @@
     margin-top: 20px;
   }
 }
+
+

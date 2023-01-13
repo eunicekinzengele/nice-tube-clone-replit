@@ -3,6 +3,7 @@ import "../Styles/navbar.css";
 import image from "../Images/logo_NiceTube.png";
 import SearchInput from "./SearchInput";
 import { Link } from "react-router-dom";
+import HumburgerMenu from "./HumburgerMenu";
 // import Row from 'react-bootstrap/Row';
 import Col from "react-bootstrap/Col";
 
@@ -16,6 +17,7 @@ function NavBar() {
           <Link to="/PageOfPopularVideo">
             <img className="img__logo" src={image} />
           </Link>
+          <HumburgerMenu/>
         </Col>
         <Col>
           <SearchInput />
