@@ -1,0 +1,34 @@
+.socialNetwors_list{
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    font-size: 15px;
+}
+.socialNetwork_links{
+    margin-top: 5px;
+    width: 150px;
+    color: red;
+}
+.facebook_link{
+    /* display: none; */
+}
+.instagram_link{
+    /* display: none; */
+}
+.tiktok_link{
+    /* display: none; */
+}
+.twitter_link{
+    /* display: none; */
+}
+.div_profil_name{
+    text-align: center;
+    color: black;
+}
+.socialNetworks{
+    background-color: #356;
+    list-style: none;
+
+}

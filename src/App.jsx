@@ -2,13 +2,18 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { gapi, loadAuth2 } from "gapi-script";
 import Login from "./Components/Login";
-import ParentsContainer from "./Components/ParentsContainer";
-import ParentsContainersLecture from "./Components/ParentsContainersLecture";
-import ParentsContainerSubscribe from "./Components/ParentsContainerSubscribe";
+import PageOfPopularVideo from "./Components/Pages/PageOfPopularVideo";
+import PageOfSubscribedChannels from "./Components/Pages/PageOfSubscribedChannels";
+import PageOfVideoSubscribed from "./Components/Pages/PageOfVideoSubscribed";
+import PageOfSearchResults from "./Components/Pages/PageOfSearchResults";
+import PageOfVideoPlayback from "./Components/Pages/PageOfVideoPlayback";
+import PageOfProfil from "./Components/Pages/PageOfProfil";
 import { useEffect, useState } from "react";
-import { contexteUse } from "./Components/UseContexte";
-import ParentsWatchSubscribe from "./Components/ParentsWatchSubscribe";
-import ParentsFilterSearch from "./Components/ParentsFilterSearch";
+import { contexteUse } from "./Components/Contextes/UseContexte";
+import Loader from "./Components/Loader";
+import socketIO from "socket.io-client";
+const socket = socketIO.connect("http://localhost:3000")
+// import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   const [token, setToken] = useState("");
@@ -39,25 +44,30 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />}></Route>
           <Route
-            path="/ParentsContainer"
-            element={<ParentsContainer />}
+            path="/PageOfPopularVideo"
+            element={<PageOfPopularVideo />}
           ></Route>
           <Route
-            path="/ParentsContainersLecture/:lecture"
-            element={<ParentsContainersLecture />}
+            path="/PageOfVideoPlayback/:lecture"
+            element={<PageOfVideoPlayback socket={socket}/>}
           />
           <Route
-            path="/ParentsContainerSubscribe"
-            element={<ParentsContainerSubscribe />}
+            path="/PageOfSubscribedChannels"
+            element={<PageOfSubscribedChannels />}
           ></Route>
           <Route
-            path="/ParentsWatchSubscribe/:channelId"
-            element={<ParentsWatchSubscribe />}
+            path="/PageOfVideoSubscribed/:channelId"
+            element={<PageOfVideoSubscribed />}
           ></Route>
           <Route
-            path="/ParentsFilterSearch:searchWord"
-            element={<ParentsFilterSearch />}
+            path="/PageOfSearchResults:searchWord"
+            element={<PageOfSearchResults />}
           ></Route>
+          <Route 
+            path="/PageOfProfil" 
+            element={<PageOfProfil />}
+            ></Route>
+          <Route path="/loader" element={<Loader />}></Route>
         </Routes>
       </div>
     </contexteUse.Provider>

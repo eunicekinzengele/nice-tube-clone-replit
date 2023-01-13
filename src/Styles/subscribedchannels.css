@@ -1,0 +1,30 @@
+.container_subscribe {
+  background-color: #0a0d0e;
+  /* color: white; */
+  margin-left: 20rem;
+  position: absolute;
+  margin-top: 7rem;
+  height: 30rem;
+  width: 70%;
+}
+.videos__emplacement {
+  width: 10rem;
+  height: 11rem;
+  display: block;
+  border-radius: 10px;
+}
+.card_link{
+  text-decoration: none;
+}
+.img_video{
+  max-width: 100%;
+  border-radius: 10px;
+ }
+.channel_name {
+  color: white;
+  margin-right: 30px;
+  font-size: 15px;
+  margin: auto;
+  /* background-color: red; */
+  text-decoration: none;
+}

@@ -1,0 +1,30 @@
+.barMenu{
+    color: red;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    flex-flow: column nowrap;
+    display: none;
+}
+.barHumburger{
+    width: 50px;
+    height: 8px;
+    background-color: white;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .barMenu{
+        display: block;
+        margin-top: 30px;
+        margin-left: 13px;
+    }
+    .barHumburger{
+        margin-top: 5px;
+        width: 40px;
+        height: 5px;
+    }
+}

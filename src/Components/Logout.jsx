@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
-import { gapi, loadAuth2 } from "gapi-script";
+import React, { } from "react";
+import "../Styles/logout.css";
+import { gapi } from "gapi-script";
 import { useNavigate } from "react-router-dom";
 
 const Logout = () => {
@@ -14,7 +15,7 @@ const Logout = () => {
   };
   return (
     <>
-      <div id="btn-logout" onClick={signOut}>
+      <div id="btn_logout" onClick={signOut}>
         Sign out
       </div>
     </>
