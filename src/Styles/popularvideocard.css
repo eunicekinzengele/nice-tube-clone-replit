@@ -126,3 +126,12 @@
     
   }
 }
+
+@media screen and (max-width: 600px) {
+  .cont_left{
+    display: none;
+  }
+  .cont-rigth{
+    width: 100%;
+  }
+}
