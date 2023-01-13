@@ -28,7 +28,7 @@ export default function SearchResult() {
   return (
     <div class="container principal">
       <div class="row">
-        <div className="container col-3 vh-100"></div>
+        <div className="container col-3 vh-100 correction_container" ></div>
         <div class="container col-3 bg-dark card vh-100 cont_left align-items-center">
         <Sidebar />
         </div>
