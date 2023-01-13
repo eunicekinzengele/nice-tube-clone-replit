@@ -34,7 +34,7 @@ export const Sidebar = () => {
         <Link to={`/PageOfProfil`}>
           <img className="profil_img" src={profil} />
         </Link>
-        <Profil/>
+        {/* <Profil/> */}
         <button className="btn btn_logout">
           <Logout />
         </button>

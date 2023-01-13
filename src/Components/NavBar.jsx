@@ -20,8 +20,10 @@ function NavBar() {
         <Col>
           <SearchInput />
         </Col>
-        <Col className="profilPhoto_nav">
+        <Col>
+        <Link to={`/PageOfProfil`}>
           <img className="profil_img_nav" src={profil} />
+        </Link>
         </Col>
         <ul></ul>
       </div>
