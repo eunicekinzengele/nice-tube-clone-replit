@@ -1,0 +1,17 @@
+.navHumburger{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    color: red;
+}
+
+@media screen and (max-width: 600px) {
+    .navHumburger{
+        margin-left: 0;
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        
+    }
+    
+}

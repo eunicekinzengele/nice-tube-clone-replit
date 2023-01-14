@@ -5,10 +5,14 @@ import SearchInput from "./SearchInput";
 import { Link } from "react-router-dom";
 import HumburgerMenu from "./HumburgerMenu";
 // import Row from 'react-bootstrap/Row';
+import Nav_menu_humburger from "./Nav_menu_humburger";
 import Col from "react-bootstrap/Col";
+import { useState } from "react";
 
 function NavBar() {
   const profil = localStorage.getItem("profilUser");
+  const [open, setOpen]= useState(false);
+
 
   return (
     <section className="header fixed-top container text-center text-light">
@@ -17,7 +21,8 @@ function NavBar() {
           <Link to="/PageOfPopularVideo">
             <img className="img__logo" src={image} />
           </Link>
-          <HumburgerMenu/>
+          <HumburgerMenu setOpen={setOpen} open={open}/>
+          {open && <Nav_menu_humburger/>}
         </Col>
         <Col>
           <SearchInput />
