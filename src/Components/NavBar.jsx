@@ -11,8 +11,7 @@ import { useState } from "react";
 
 function NavBar() {
   const profil = localStorage.getItem("profilUser");
-  const [open, setOpen]= useState(false);
-
+  const [open, setOpen] = useState(false);
 
   return (
     <section className="header fixed-top container text-center text-light">
@@ -21,16 +20,16 @@ function NavBar() {
           <Link to="/PageOfPopularVideo">
             <img className="img__logo" src={image} />
           </Link>
-          <HumburgerMenu setOpen={setOpen} open={open}/>
-          {open && <Nav_menu_humburger/>}
+          <HumburgerMenu setOpen={setOpen} open={open} />
+        {open && <Nav_menu_humburger />}
         </Col>
         <Col>
           <SearchInput />
         </Col>
         <Col>
-        <Link to={`/PageOfProfil`}>
-          <img className="profil_img_nav" src={profil} />
-        </Link>
+          <Link to={`/PageOfProfil`}>
+            <img className="profil_img_nav" src={profil} />
+          </Link>
         </Col>
         <ul></ul>
       </div>
