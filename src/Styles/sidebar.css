@@ -14,7 +14,7 @@
   }
 
   @media screen and (max-width:600px)  {
-    .sideBar{
-      /* display: none; */
+    .side_link{
+      margin-top: 20px;
     }
   }
