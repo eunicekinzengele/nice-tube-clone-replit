@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import SocialNetworkLinks from "./SocialNetworkLinks";
 import Logout from "./Logout";
-import Profil from "./Profil";
+import Profil from "./ProfilAndModification";
 import "../Styles/sidebar.css";
 
 export const Sidebar = () => {

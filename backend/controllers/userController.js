@@ -1,33 +1,34 @@
 const User = require("../models/users");
 
-exports.createAUser = (req, res, next) => {
-  User.findOne({ email: req.body.email })
-    .then((user) => {
-      if (user === null) {
-        const user = new User({
-          ...req.body
+exports.createAUser = async (req, res, next) => {
+  try {
+      const user= await User.findOne({email: req.body.email})
+      if (user === null){
+        const newUser= new User({
+          imageUrl: req.body.imageUrl,
+          name: req.body.name,
+          facebook: req.body.facebook,
+          email: req.body.email,
+          tiktok: req.body.tiktok,
+          linkedin: req.body.linkedin,
         });
-        user
-          .save()
-          .then((data) => {
-            res.status(201).json({ data, message: "user saved" });
-          })
-          .catch((error) => {
-            res.status(400).json({ error });
-          });
-          console.log("utilisateur", data);
-      } else {
-        res.status(200).json({ user });
+        await newUser.save()
+        return res.status(201).send({data: newUser, message: "user saved" }) 
+         
+      }else{
+        res.status(200).send ({data:user})
       }
-    })
-    .catch((error) => {
-      res.status(404).json({ error });
-    });
-};
+
+  } catch (error) {
+    console.log(error);
+    res.sendStatus(500);
+  }
+}
+
 exports.getOneUser = (req, res, next) => {
   User.findOne({
     _id: req.params.id,
-  }) 
+  })
     .then((user) => {
       res.status(200).json(user);
     })
@@ -51,11 +52,16 @@ exports.getAllUsers = (req, res, next) => {
 };
 
 exports.updateOneUser = (req, res, next) => {
-  const user = new User({
-    _id: req.params.id}, { 
-        ...req.body, _id: req.params.id
-    });
-  
+  const user = new User(
+    {
+      _id: req.params.id,
+    },
+    {
+      ...req.body,
+      _id: req.params.id,
+    }
+  );
+
   User.updateOne({ _id: req.params.id }, user)
     .then(() => {
       res.status(201).json({

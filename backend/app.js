@@ -5,6 +5,7 @@ const http = require("http").Server(app);
 const { json } = require("react-router-dom");
 const cors = require("cors");
 const Commentroutes = require("./routes/commentRoute");
+const userRoute = require ("./routes/userRoute")
 const action = require('./action/Action');
 const { error } = require("console");
 const socketIO = require("socket.io")(http, {
@@ -49,17 +50,18 @@ socketIO.on("connection", (socket) => {
     );
   });
 
-
   socket.on("disconnect", () => {
     console.log("🔥: A user disconnected");
   });
-});
+}); 
 
 // respond with "hello world" when a GET request is made to the homepage
 // app.get('/newa', (req, res) => {
 //   res.send('hello world')
 // })
 app.use("/comment", Commentroutes);
+app.use("/users", userRoute);
+
 
 console.log("salut Eunice");
 

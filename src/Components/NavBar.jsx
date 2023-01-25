@@ -8,8 +8,12 @@ import HumburgerMenu from "./HumburgerMenu";
 import Nav_menu_humburger from "./Nav_menu_humburger";
 import Col from "react-bootstrap/Col";
 import { useState } from "react";
+import { useEffect } from "react";
 
 function NavBar() {
+  
+
+
   const profil = localStorage.getItem("profilUser");
   const [open, setOpen] = useState(false);
 
@@ -21,7 +25,7 @@ function NavBar() {
             <img className="img__logo" src={image} />
           </Link>
           <HumburgerMenu setOpen={setOpen} open={open} />
-        {open && <Nav_menu_humburger />}
+          {open && <Nav_menu_humburger />}
         </Col>
         <Col>
           <SearchInput />

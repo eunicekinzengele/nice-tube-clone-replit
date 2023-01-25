@@ -1,122 +1,147 @@
-.profil_page{
-    /* background-color: blue; */
-    flex-direction: column;
-    align-items: center;
-    height: 500Px;
+.profil_page {
+  /* background-color: blue; */
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
 }
-.input_displayNone{
-    display: none;
+.input_displayNone {
+  display: none;
 }
-.cont_profil{
-    width: 73%;
-    background-color: #E7E7E7;
+.cont_profil {
+  width: 73%;
+  background-color: #e7e7e7;
 }
-.profil_image{
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
+.profil_image {
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
 }
-.profil_title{
-    font-size: 30px;
-    text-align: center;
-    color: #49A4B0;
+.profil_title {
+  font-size: 30px;
+  text-align: center;
+  color: #49a4b0;
 }
-.img_profil{
-    max-width: 100%;
-    height: 200px;
-    margin-top: 40px;
-    border-radius: 50%;
+.img_profil {
+  max-width: 100%;
+  height: 200px;
+  margin-top: 40px;
+  border-radius: 50%;
 }
-.appareil_photo{
-    max-width: 100%;
-}
-.button_appareil{
-    align-items: center;
-    justify-content: center;
-    width: 70px;
-    border: none;
-    margin-top: 10px;
-    background-color: #E7E7E7;
-}
-.img_and_icon{
-    text-align: center;
-    justify-content: center;
-    width: 250px;
-}
-.div_profilname{
-    width: 100%;
-    height: 50px;
-    margin-top: 50px;
-    /* background-color: red; */
-    align-items: center;
-    text-align: center;
-}
-.input_profil_name{
-    width: 80%;
-    height: 50px;
-    border: solid 1px #49A4B0;
-    font-style: italic;
-}
-.button_modifier{
-    width: 40px;
-    height: 50px;
-}
-.div_liens{
-    /* border: solid 2px black; */
-    width: 90%;
-    height: 450px;
-    text-align: center;
-}
-.row_liens{
-    border: 1px solid #49A4B0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 20px;
-    height: 300px;
-}
-.container_link{
-    margin-top: 17px;
-    width: 90%;
-    /* border: solid 2px black; */
-    height: 270px;
+.appareil_photo {
+  width: 40px;
 
 }
-.lien_rx{
-    max-width: 100%;
-    height: 50px;
-    margin-top: 10px;
+.button_appareil {
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  border: none;
+  margin-top: 10px;
+  background-color: #e7e7e7;
 }
-.inputfacebooklink{
-    width: 80%;
-    height: 50px;
+.img_and_icon {
+  /* text-align: center; */
+  /* justify-content: center; */
+  max-width: 100%;
+  /* width: 700px; */
+  justify-content: space-between;
+  /* display: inline-block; */
 }
-.link{
-    width: 100%;
-    height: 50px;
-    border: solid 1px #49A4B0;
-    font-style: italic;
+.rxSociauxLinks {
+  margin-top: 2rem;
+  margin-left: 5rem;
+}
+.image_appareilIcon {
+  text-align: center;
+}
+.icon_buttonrx {
+  list-style: none;
+  width: 60px;
+  height: 50px;
+  background-color: #49a4b0;
+  border-radius: 10px;
+  border: 1px solid white;
+  margin-top: 7px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px black;
+}
 
+.div_profilname {
+  width: 100%;
+  height: 50px;
+  margin-top: 50px;
+  /* background-color: red; */
+  align-items: center;
+  text-align: center;
 }
-.buttons_annuler_modifier{
-    width: 100%;
-    height: 30px;
-    /* background-color: red; */
-    text-align: right;
-    margin-top: 15px;
+.input_profil_name {
+  width: 80%;
+  height: 50px;
+  border: solid 1px #49a4b0;
+  font-style: italic;
 }
-.modifier_annuler{
-    margin-left: 15px;
-    border: none;
-    border-radius: 20px;
-    background-color: #1C19BB;
-    color: white;
-    width: 8rem;
-    height: 40px;
+.button_modifier {
+  width: 40px;
+  height: 50px;
 }
-.modifier_annuler:hover{
-    background-color: white;
-    border: 1px solid #49A4B0;
-    color: #49A4B0;
+.div_liens {
+  /* border: solid 2px black; */
+  width: 90%;
+  height: 450px;
+  text-align: center;
+}
+.row_liens {
+  border: 1px solid #49a4b0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
+  height: 300px;
+}
+.container_link {
+  margin-top: 17px;
+  width: 90%;
+  /* border: solid 2px black; */
+  height: 270px;
+}
+.lien_rx {
+  max-width: 100%;
+  height: 50px;
+  margin-top: 10px;
+}
+.inputfacebooklink {
+  width: 80%;
+  height: 50px;
+}
+.link {
+  width: 100%;
+  height: 50px;
+  border: solid 1px #49a4b0;
+  font-style: italic;
+}
+.buttons_annuler_modifier {
+  width: 100%;
+  height: 30px;
+  /* background-color: red; */
+  text-align: right;
+  margin-top: 15px;
+}
+.modifier_annuler {
+  margin-left: 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: #1c19bb;
+  color: white;
+  width: 8rem;
+  height: 40px;
+}
+.modifier_annuler:hover {
+  background-color: white;
+  border: 1px solid #49a4b0;
+  color: #49a4b0;
 }

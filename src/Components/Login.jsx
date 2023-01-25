@@ -6,6 +6,7 @@ import { gapi, loadAuth2 } from "gapi-script";
 import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { contexteUse } from "./Contextes/UseContexte";
+import axios from "axios";
 
 function Login() {
   const navigate = useNavigate();
@@ -48,9 +49,27 @@ function Login() {
     const profileImg = user.getBasicProfile().getImageUrl();
     localStorage.setItem("profilUser", profileImg);
     console.log("bonjour", profileImg);
-    navigate("/PageOfPopularVideo");
 
-    console.log(user);
+      axios
+        .post ('http://localhost:3000/users', {
+          imageUrl: user.getBasicProfile().getImageUrl(),
+          name: user.wt.Ad,
+          email: user.wt.cu
+        })
+        .then(
+          (response) => {
+            console.log('reponse: ', response);
+            localStorage.setItem('userId', response.data.data._id)
+            localStorage.setItem('imgUrl', response.data.data.imageUrl)
+            localStorage.setItem('userName', response.data.data.name)
+            navigate("/PageOfPopularVideo");
+          },
+          (error) => {
+            console.log(error);
+          }
+        )
+
+    console.log("utilisateur", user);
   };
   return (
     <div className="container-fluid essaie">
