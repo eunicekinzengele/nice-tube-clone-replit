@@ -29,7 +29,6 @@
 }
 .appareil_photo {
   width: 40px;
-
 }
 .button_appareil {
   align-items: center;
@@ -69,7 +68,6 @@
   flex-direction: column;
   box-shadow: 5px 5px 5px black;
 }
-
 .div_profilname {
   width: 100%;
   height: 50px;
@@ -144,4 +142,21 @@
   background-color: white;
   border: 1px solid #49a4b0;
   color: #49a4b0;
+}
+
+@media screen and (max-width:600px){
+    .cont_profil{
+        width: 100%;
+    }
+    .profil_title{
+        font-size: 25px;
+        margin-top: -5rem;
+    }
+    .profil_image{
+
+    }
+    .img_and_icon{
+        width: 200px;
+    }
+    
 }

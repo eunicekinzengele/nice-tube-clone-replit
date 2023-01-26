@@ -51,7 +51,7 @@ export default function VideoOfSubscribedChannels() {
                       <div className="videos__emplacement">
                         <img
                           className="img_video"
-                          src={item?.snippet?.thumbnails?.default?.url}
+                          src={item?.snippet?.thumbnails?.medium?.url}
                           alt="sub"
                         />
                         <p className="title__video">{item.snippet.title}</p>

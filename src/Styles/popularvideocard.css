@@ -88,7 +88,7 @@
 }
 .videos__emplacement{
   width: 12rem;
-  height: 11rem;
+  height: 12rem;
   display: block;
   border-radius: 10px;
   margin-bottom: 40px;
@@ -135,7 +135,7 @@
     display: none;
   }
   .videos__emplacement{
-    width: 80%rem;
+    width: 80%;
   }
   .row_emplacement{
     justify-content: center;

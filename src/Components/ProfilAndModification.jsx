@@ -1,14 +1,7 @@
 import React, { useState, useEffect } from "react";
-import SocialNetworkLinks from "./SocialNetworkLinks";
-import { useNavigate, useParams } from "react-router-dom";
 import { Link, NavLink } from "react-router-dom";
-
+import "../Styles/profil.css";
 import Sidebar from "./Sidebar";
-import facebookIcon from "../Images/facebookIcon-removebg-preview.png";
-import emailIcon from "../Images/gmailIcon-removebg-preview.png";
-import tiktokIcon from "../Images/tiktok-removebg-preview.png";
-import linkedinIcon from "../Images/linkedinIcon.png";
-import image from "../Images/profil_picture.jpg";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { SiGmail, SiTiktok } from "react-icons/si";
 import Appareil from "../Images/appareil.png";
@@ -19,7 +12,7 @@ function ProfilAndModification({ user }) {
       <div>
         <div className="container principal">
           <div className="row">
-            <div className="container col-3 vh-100"></div>
+            <div className="container correction_container col-3 vh-100"></div>
             <div class="container col-3 bg-dark card vh-100 cont_left align-items-center">
               <Sidebar />
             </div>
@@ -73,8 +66,7 @@ function ProfilAndModification({ user }) {
                           </label>
                         </div>
                         <div className="profil_name">
-                          <p>Eunice</p>
-                          <p>{user.name}</p>
+                          <h6>{user.name}</h6>
                         </div>
                       </div>
                       <div className="col rxSociauxLinks">
